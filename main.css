@@ -1,5 +1,5 @@
 /*
-#9bc6ba - light blue
+#87ADA3 - light blue
 #4b6a61 - dark blue
 #ddc9a9 - light brown
 #a0876f - middle brown
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-	color: #9bc6ba;
+	color: #87ADA3;
 	font-size: 2em;
 	margin: 0.25em;
 }
@@ -46,11 +46,17 @@ h2 {
 	margin: 0.25em auto 0.75em auto; 
 }
 
+#search_input:focus {
+	outline: 3px solid #87ADA3;
+	color: #6f4d32;
+	font-size: 1.25em;
+}
+
 #recipes_list li a {
 	padding: 0.5em;
 	margin: 0.25em;
 	border-radius: 15px;
-	background-color: rgba(155, 198, 186, 0.25);
+	background-color: rgba(135, 173, 163, 0.25);
 	display: block; 
 }
 
@@ -70,8 +76,13 @@ p {
 
 li a:hover {
 	color: #a0876f;
-	font-size: 2em;
-	background-color: rgba(155, 198, 186, 1);
+	font-size: 1.75em;
+}
+
+li a:focus {
+	outline: 3px solid #6f4d32;
+	color: #a0876f;
+	font-size: 1.75em;		
 }
 
 a:hover {
