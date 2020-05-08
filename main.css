@@ -1,0 +1,79 @@
+/*
+#9bc6ba - light blue
+#4b6a61 - dark blue
+#ddc9a9 - light brown
+#a0876f - middle brown
+#6f4d32 - dark brown
+*/
+
+h1 {
+	color: #4b6a61;
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 0px;
+}
+
+h2 {
+	color: #9bc6ba;
+	font-size: 2em;
+	margin: 0.25em;
+}
+
+#home {
+	font-size: 1.75em;
+	margin: 0.25em 0.25em 0em 0.25em;
+}
+
+.tags {
+	display: none;
+}
+
+#recipes_list {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+
+#search_input {
+	padding: 0;
+	display: block;
+	padding: 0.5em;
+	width: 75%;
+	font-size: 1.25 em;
+	padding: 12px 20px; 
+	border: 1px solid #4b6a61; 
+	display: block;
+	margin: 0.25em auto 0.75em auto; 
+}
+
+#recipes_list li a {
+	padding: 0.5em;
+	margin: 0.25em;
+	border-radius: 15px;
+	background-color: rgba(155, 198, 186, 0.25);
+	display: block; 
+}
+
+a {
+	text-decoration: none;
+	color: #a0876f;
+}
+
+p, li, li a{
+	color: #6f4d32;
+	font-size: 1.25em;
+}
+
+p {
+	margin: 0 0.25em 0 0.75em;
+}
+
+li a:hover {
+	color: #a0876f;
+	font-size: 2em;
+	background-color: rgba(155, 198, 186, 1);
+}
+
+a:hover {
+	color: #6f4d32;
+}

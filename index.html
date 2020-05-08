@@ -5,58 +5,79 @@
 		<title>Favorite Recipes</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
-	<head>
+		<meta name="keywords" content="recipes sweets meat chicken chocolate cookies brownies ice cream pasta dumplings">
+	</head>
 	<body>
 		<h1>Favorite Recipes</h1>
-		<ul>
+		<input type="text" id="search_input" onkeyup="search_recipes()" placeholder="Search">
+		<ul id="recipes_list">
 			<!-- A -->
 			<!-- B -->
-			<li><a href="baked_chicken_breasts.html" class="baked_chicken_breasts bake chicken chicken_breasts season salt pepper black_pepper garlic_powder onion_powder garlic onion seasoning seasoned">Baked Chicken Breasts</a></li>
-			<li><a href="brownie_cookie_from_box_brownie_mix.html" class="brownie_cookie_from_box_brownie_mix brownie brownie_mix box_brownie_mix cookie flour all_purpose_flour chocolate vegetable_oil oil egg water">Brownie Cookie from Box Brownie Mix</a></li>
+			<li><a href="baked_chicken_breasts.html">Baked Chicken Breasts <p class="tags">baked chicken breasts bake salt black pepper garlic powder onion powder garlic onion seasoning seasoned oven</p></a></li>
+			<li><a href="breadcrumbs.html">Breadcrumbs<p class="tags">breadcrumbs italian stale bread oven bake</p></a></li>
+			<li><a href="breaded_chicken_strips.html">Breaded Chicken Strips<p class="tags">breaded chicken strips breadcrumbs parmesan parsley kosher salt black pepper all purpose flouw eggs chicken breast vegetable oil stove top stovetop</p></a></li>
+			<li><a href="brownie_cookie_from_box_brownie_mix.html">Brownie Cookie from Box Brownie Mix <p class="tags">brownie cookie from box brownie mix all purpose flour chocolate vegetable oil egg water oven bake</p></a></li>
 			<!-- C -->
-			<li><a href="cake_mix_brownies.html" class="cake_mix_brownies cake_mix vegetable_oil milk egg chocolate_chips chocolate">Cake Mix Brownies</a></li>
-			<li><a href="chocolate_chip_cookies.html" class="chocolate_chip_cookies butter brown_sugar vanilla vanilla_extract flour all_purpose_flour milk milk_chocolate_chips chocolate milk_chocolate semi_sweet_chocolate semi_sweet_chocolate_chips">Chocolate Chip Cookies</a></li>
-			<li><a href="chocolate_chip_cookie_dough_balls.html" class="chocolate_chip_cookie_dough_balls butter brown_sugar vanilla vanilla_extract flour all_purpose_flour milk milk_chocolate_chips mini_milk_chocolate_chips chocolate milk_chocolate semi_sweet_chocolate semi_sweet_chocolate_chips">Chocolate Chip Cookie Dough Balls</a></li>
-			<li><a href="chocolate_tart.html" class="chocolate_tart tart chocolate chocolate_chips heavy_cream two_ingredients">Chocolate Tart</a></li>
-			<li><a href="chicken_crescent_roll_bundles.html" class="chicken_crescent_roll_bundles chicken shredded_chicken crescent crescent_roll rotisserie_chicken rotisserie cream_of_chicken ranch_dressing_mix cream_cheese">Chicken Crescent Roll Bundles</a></li>
-			<li><a href="chicken_and_dumplings.html" class="chicken_and_dumplings chicken shredded_chicken chicken_broth flour all_purpose_flour baking_powder butter milk">Chicken and Dumplings</a></li>
+			<li><a href="cake_mix_brownies.html">Cake Mix Brownies <p class="tags">cake mix brownies vegetable oil milk egg chocolate chips oven bake</p></a></li>
+			<li><a href="chocolate_chip_cookies.html">Chocolate Chip Cookies <p class="tags">chocolate chip cookies butter brown sugar vanilla extract all purpose flour milk chocolate chips semi sweet chocolate chips bake oven</p></a></li>
+			<li><a href="chocolate_chip_cookie_dough_balls.html">Chocolate Chip Cookie Dough Balls <p class="tags">chocolate chip cookie dough balls butter brown sugar vanilla extract all purpose flour mini milk chocolate chips  semi sweet chocolate chips electric hand mixer refrigerator fridge freezer</p></a></li>
+			<li><a href="chocolate_tart.html">Chocolate Tart <p class="tags">chocolate tart chocolate chips heavy cream two ingredients microwave</p></a></li>
+			<li><a href="chicken_and_dumplings.html">Chicken and Dumplings <p class="tags">chicken and dumplings  shredded chicken chicken broth all purpose flour baking powder butter milk oven bake stove top stovetop</p></a></li>
+			<li><a href="chicken_crescent_roll_bundles.html">Chicken Crescent Roll Bundles <p class="tags">chicken crescent roll bundles shredded chicken crescent roll rotisserie  cream of chicken ranch dressing mix cream cheese oven bake</p></a></li>
 			<!-- D -->
 			<!-- E -->
 			<!-- F -->
-			<li><a href="chocolate_fudge.html" class="fudge chocolate chocolate_chips marshmallow_creme evaporated_milk sugar margarine vanilla vanilla_extract">Fudge</a></li>
+			<li><a href="chocolate_fudge.html">Fudge <p class="tags">fudge semi sweet chocolate chips marshmallow creme evaporated milk sugar margarine vanilla extract stove top stovetop</p></a></li>
 			<!-- G -->
 			<!-- H -->
-			<li><a href="homemade_three_musketeers.html" class="three_musketeers chocolate marshmallow_creme">Homemade Three Musketeers</a></li>
+			<li><a href="homemade_three_musketeers.html">Homemade Three Musketeers <p class="tags">three musketeers chocolate marshmallow creme microwave</p></a></li>
 			<!-- I -->
 			<!-- J -->
 			<!-- K -->
 			<!-- L -->
 			<!-- M -->
-			<li><a href="microwave_mug_double_chocolate_brownie.html" class="mug_brownie microwave mug chocolate brownie all_purpose_flour flour light_brown_sugar dark_brown_sugar brown_sugar unsweetened_cocoa_powder cocoa_powder salt canola_oil milk water chocolate_chips">Microwave Mug Double Chocolate Brownie</a></li>
+			<li><a href="microwave_mug_double_chocolate_brownie.html">Microwave Mug Double Chocolate Brownie <p class="tags">mug brownie microwave all purpose flour  light brown sugar dark brown sugar unsweetened cocoa powder salt canola oil milk water chocolate chips</p></a></li>
 			<!-- N -->
-			<li><a href="no_churn_vanilla_ice_cream.html" class="no_churn_vanilla_ice_cream ice_cream vanilla vanilla_extract sweetened_condensed_milk salt heavy_cream">No Churn Vanilla Ice Cream</a></li>
+			<li><a href="no_churn_vanilla_ice_cream.html">No Churn Vanilla Ice Cream <p class="tags">no churn vanilla ice cream vanilla extract sweetened condensed milk salt heavy cream</p></a></li>
 			<!-- O -->
 			<!-- P -->
-			<li><a href="pancakes.html" class="pancakes flour baking_powder sugar eggs milk">Pancakes</a></li>
-			<li><a href="homemade_pasta.html" class="pasta noodle noodles dough pasta_dough flour eggs eggs oil">Homemade Pasta Dough</a></li>
-			<li><a href="potato_cube.html" class="potato_cubes potato cubed oil vegetable_oil salt pepper ">Potato Cubes</a></li>
+			<li><a href="pancakes.html">Pancakes<p class="tags">pancakes flour baking powder sugar eggs milk stove top stovetop</p></a></li>
+			<li><a href="homemade_pasta.html">Pasta Dough<p class="tags">noodles dough pasta dough flour eggs oil</p></a></li>
+			<li><a href="potato_cube.html">Potato Cubes <p class="tags">potato cubes cubed vegetable oil salt pepper stove top stovetop</p></a></li>
 			<!-- Q -->
 			<!-- R -->
 			<!-- S -->
-			<li><a href="sweetened_condensed_milk.html" class="sweetened_condensed_milk substitute evaporated_milk sugar butter three_ingredients">Sweetened Condensed Milk</a></li>
+			<li><a href="sweetened_condensed_milk.html">Sweetened Condensed Milk <p class="tags">sweetened condensed milk substitute evaporated milk sugar butter three ingredients stove top stovetop</p></a></li>
 			<!-- T -->
 			<!-- U -->
 			<!-- V -->
 			<!-- W -->
 			<!-- X -->
 			<!-- Y -->
+			<li><a href="yogurt_chicken.html">Yogurt Chicken<p class="tags">yogurt chicken plain yogurt skinless boneless chicken breasts lemon breadcrumbs garlic powder salt butter oven bake</p></a></li>
 			<!-- Z -->
-			<li><a href="" class=""></a></li>
-			<li><a href="" class=""></a></li>
-			<li><a href="" class=""></a></li>
-			<li><a href="" class=""></a></li>
-			<li><a href="" class=""></a></li>
-			<li><a href="" class=""></a></li>
+			<!-- <li><a href=""><p class="tags"> </p></a></li> -->
 		</ul>
-	<body>				
+		<script>
+			function search_recipes() {
+				// Declare variables
+				var input, filter, ul, li, a, i, txtValue, tag;
+				input = document.getElementById('search_input');
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("recipes_list");
+				li = ul.getElementsByTagName('li');
+
+				// Loop through all list items, and hide those who don't match the search query
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</body>				
 </html>
