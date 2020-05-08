@@ -1,28 +1,33 @@
 /*
-#9bc6ba - light blue
-#73948B - darker green
+#9bc6ba - light blue rgba(155, 198, 186, 1)
+#44786A - darker blue rgba(68, 120, 106, 1)
 #4b6a61 - dark blue
 #ddc9a9 - light brown
 #a0876f - middle brown
+#625141 - darker middle brown 
 #6f4d32 - dark brown
 */
 
+body {
+	padding-bottom: 1em;
+}
+
 h1 {
-	color: #4b6a61;
+	color: #44786A;
 	text-align: center;
 	font-size: 3em;
-	margin-bottom: 0px;
+	margin: 0px auto;
 }
 
 h2 {
-	color: #73948B;
+	color: #44786A;
 	font-size: 2em;
 	margin: 0.25em;
 }
 
 #home {
 	font-size: 1.75em;
-	margin: 0.25em 0.25em 0em 0.25em;
+	margin: 0.25em;
 }
 
 .tags {
@@ -31,7 +36,7 @@ h2 {
 
 #recipes_list {
 	list-style-type: none;
-	margin: 0 0 2em 0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -42,13 +47,13 @@ h2 {
 	width: 75%;
 	font-size: 1.25 em;
 	padding: 12px 20px; 
-	border: 1px solid #4b6a61; 
+	border: 1px solid #44786A; 
 	display: block;
 	margin: 0.25em auto 0.75em auto; 
 }
 
 #search_input:focus {
-	outline: 3px solid #73948B;
+	outline: 3px solid #44786A;
 	color: #6f4d32;
 	font-size: 1.25em;
 }
@@ -63,7 +68,7 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: #a0876f;
+	color: #6f4d32;
 }
 
 p, li, li a{
@@ -76,17 +81,23 @@ p {
 }
 
 li a:hover {
-	color: #a0876f;
 	font-size: 1.75em;
 	background-color: rgba(155, 198, 186, 1);
 }
 
-li a:focus {
+#recipes_list li a:focus {
 	outline: 3px solid #6f4d32;
-	color: #a0876f;
+	color: #44786A;
 	font-size: 1.75em;
 }
 
+a:focus {
+	outline: 3px solid #6f4d32;
+	padding: 0.25em;
+	color: #44786A;
+	font-size: 1.25em;
+}
+
 a:hover {
-	color: #6f4d32;
+	color: #44786A;
 }
