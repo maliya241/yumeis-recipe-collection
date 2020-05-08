@@ -1,5 +1,6 @@
 /*
-#87ADA3 - light blue
+#9bc6ba - light blue
+#73948B - darker green
 #4b6a61 - dark blue
 #ddc9a9 - light brown
 #a0876f - middle brown
@@ -14,7 +15,7 @@ h1 {
 }
 
 h2 {
-	color: #87ADA3;
+	color: #73948B;
 	font-size: 2em;
 	margin: 0.25em;
 }
@@ -47,7 +48,7 @@ h2 {
 }
 
 #search_input:focus {
-	outline: 3px solid #87ADA3;
+	outline: 3px solid #73948B;
 	color: #6f4d32;
 	font-size: 1.25em;
 }
@@ -56,7 +57,7 @@ h2 {
 	padding: 0.5em;
 	margin: 0.25em;
 	border-radius: 15px;
-	background-color: rgba(135, 173, 163, 0.25);
+	background-color: rgba(155, 198, 186, 0.25);
 	display: block; 
 }
 
@@ -77,12 +78,13 @@ p {
 li a:hover {
 	color: #a0876f;
 	font-size: 1.75em;
+	background-color: rgba(155, 198, 186, 1);
 }
 
 li a:focus {
 	outline: 3px solid #6f4d32;
 	color: #a0876f;
-	font-size: 1.75em;		
+	font-size: 1.75em;
 }
 
 a:hover {
