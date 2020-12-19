@@ -10,23 +10,29 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>No Churn Ice Cream</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
 		<p>Ice Cream Base</p>
-		<ul>
-			<li>1 (14 oz) can Sweetened Condensed Milk</li>
-			<li>pinch Fine Salt</li>
-			<li>2 cups cold Heavy Cream</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> (14 oz) <span class="measure_unit">can</span> Sweetened Condensed Milk</li>
+			<li>pinch of Salt</li>
+			<li><span class="measurement">2</span> <span class="measure_unit">cups</span> cold Heavy Cream</li>
 		</ul>
 		<p>Vanilla Ice Cream</p>
-		<ul>
-			<li>2 teaspoons Pure Vanilla Extract or Vanilla Bean Paste</li>
+		<ul id="ingredients">
+			<li><span class="measurement">2</span> <span class="measure_unit">teaspoons</span> Pure Vanilla Extract or Vanilla Bean Paste</li>
 		</ul>
 		<p>Chocolate Ice Cream</p>
-		<ul>
-			<li>1/8 cup Unsweetened Cocoa Powder</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Unsweetened Cocoa Powder</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Whisk together the condensed milk, salt, and flavoring ingredient in a large bowl.</li>
 			<li>Whip the heavy cream with a mixer on medium-high speed until firm peaks form, about 2 minutes.</li>
 			<li>Fold about 1 cup of the whipped cream into the condensed milk mixture with a rubber spatula until combined.</li>
@@ -37,5 +43,6 @@
 		</ol>	
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/no-churn-vanilla-ice-cream-3364776">https://www.foodnetwork.com/recipes/food-network-kitchen/no-churn-vanilla-ice-cream-3364776</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

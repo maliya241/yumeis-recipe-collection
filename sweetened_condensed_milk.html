@@ -10,14 +10,20 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Sweetened Condensed Milk</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 (12 oz) can Evaporated Milk</li>
-			<li>1/2 to 1 cup Sugar</li>
-			<li>1 tablespoon Butter</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> (12 oz) <span class="measure_unit">can</span> Evaporated Milk</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Sugar *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Butter</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Place the milk and sugar in a pan.</li>
 			<li>Turn on medium-high heat.</li>
 			<li>Bring to a boil, stirring frequently. </li>
@@ -25,7 +31,12 @@
 			<li>Take off heat and add butter. Stir butter to melt and let cool.</li>
 			<li>If you don’t need it right away, you can store it in the refrigerator. </li>
 		</ol>
+		<h2>Note</h2>
+		<ul id="notes">
+			<li>For added sweetness, can add up to a cup of sugar in total.</li>
+		</ul>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/">http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

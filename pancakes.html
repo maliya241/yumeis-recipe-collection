@@ -10,29 +10,36 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Pancakes</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 1/4 cups Flour *</li>
-			<li>1 tablespoon Baking Powder</li>
-			<li>4 tablespoons Sugar *</li>
-			<li>1 Egg *</li>
-			<li>1 1/4 cups Milk *</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1 1/4</span> <span class="measure_unit">cups</span> Flour *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Baking Powder</li>
+			<li><span class="measurement">4</span> <span class="measure_unit">tablespoons</span> Sugar *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">Egg</span> *</li>
+			<li><span class="measurement">1 1/4</span> <span class="measure_unit">cups</span> Milk *</li>
 			<li>Butter or Oil for greasing the pan</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Mix flour, baking powder, sugar, and salt in a large mixing bowl.</li>
 			<li>Put egg in the middle of the flour mixture, pour milk, and stir.</li>
 			<li>Wisk together all the ingredients until they’re smooth.</li>
 			<li>Put butter or oil in pan to grease it.</li>
 			<li>Turn burner on medium-high heat. </li>
-			<li>Pour about 1/4 cup into pan.</li>
+			<li>Pour about 1/4 cup into the pan.</li>
 		</ol>
 		<h2>Notes</h2>
-		<ul>
-			<li>* Changed from Original Recipe</li>
+		<ul id="notes">
+			<li>* Changed from Original Recipe.</li>
 		</ul>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://justplaincooking.ca/diy-pancake-mix/">https://justplaincooking.ca/diy-pancake-mix/</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

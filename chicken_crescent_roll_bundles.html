@@ -10,18 +10,24 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Chicken Crescent Roll Bundles</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>2 cups cooked Rotisserie Chicken</li>
-			<li>2 cans Cream of Chicken Soup</li>
-			<li>3 tablespoons from Ranch Dressing Mix package *</li>
-			<li>2 eight oz cans Crescent Roll Dough</li>
-			<li>1 eight oz package Cream Cheese</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> cooked Rotisserie Chicken *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">can</span> Cream of Chicken Soup *</li>
+			<li><span class="measurement">1 1/2</span> <span class="measure_unit">tablespoons</span> from Ranch Dressing Mix package *</li>
+			<li><span class="measurement">1</span> (8 oz) <span class="measure_unit">can</span> Crescent Roll Dough *</li>
+			<li><span class="measurement">1/2</span> (8 oz) <span class="measure_unit">package</span> Cream Cheese *</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Preheat oven to 375&#8457;.</li>
-			<li>Add cream cheese and both cans of soup to a medium pot and turn to medium heat. Stir until cream cheese melts.</li>
+			<li>Add cream cheese and cream of chicken soup to a medium pot and turn to medium heat. Stir until cream cheese melts.</li>
 			<li>Add dressing mix and stir until well combined. Turn down to low heat.</li>
 			<li>Pour most of the mixture into a large bowl, leaving enough in the pan to use as a gravy to put on the chicken bundles.</li>
 			<li>Add the chicken to the large bowl and mix together.</li>
@@ -30,10 +36,11 @@
 			<li>Bake in the oven for 9 - 12 minutes.</li>
 		</ol>
 		<h2>Note</h2>
-		<ul>
+		<ul id="notes">
 			<li>* Changed from Original Recipe</li>
 		</ul>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://lilluna.com/chicken-crescent-roll-bundles/#wprm-recipe-container-98273">https://lilluna.com/chicken-crescent-roll-bundles/#wprm-recipe-container-98273</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

@@ -10,21 +10,28 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Pie Crust</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 1/4 cup All Purpose Flour</li>
-			<li>1/2 cup Butter</li>
-			<li>1 tablespoon Sugar</li>
-			<li>1/8 cup Water, icy cold</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1 1/4</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Butter</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Sugar</li>
+			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Water, icy cold</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Mix together 1 cup of flour and butter (chopped if using food processor or microwaved for 30 seconds and broken up with whisk before mixing with flour).</li>
-			<li>Once blended together, add the remained 1/4 cup of flour and 1 tablespoon of sugar.</li>
+			<li>Once blended together, add the remaining flour and sugar.</li>
 			<li>Mix in the icy cold water until well blended together.</li>
-			<li>Roll out the needed size, and it ready to use.</li>
+			<li>Roll out the needed size, and it is ready to use.</li>
 		</ol>	
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71">https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

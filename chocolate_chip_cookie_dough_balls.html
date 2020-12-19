@@ -10,24 +10,31 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Chocolate Chip Cookie Dough Balls</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1/3 cup Butter, Softened</li>
-			<li>1/3 cup Brown Sugar</li>
-			<li>1 1/2 teaspoons Vanilla Extract</li>
-			<li>1 cup All Purpose Flour, heat treated</li>
-			<li>1-2 teaspoon Milk, as needed</li>
-			<li>1 cup Mini Milk Chocolate Chips</li>
-			<li>2 cup Milk Chocolate or Semi-Sweet Chocolate Chips (for melting)</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Butter, softened</li>
+			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Brown Sugar</li>
+			<li><span class="measurement">1 1/2</span> <span class="measure_unit">teaspoons</span> Vanilla Extract</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All Purpose Flour, heat treated</li>
+			<li><span class="measurement">1</span>-<span class="measurement">2</span> <span class="measure_unit">teaspoon</span> Milk, as needed</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Mini Chocolate Chips</li>
+			<li><span class="measurement">2</span> <span class="measure_unit">cup</span> Milk Chocolate or Semi-Sweet Chocolate Chips (for melting)</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>In a mixing bowl, beat together the butter, brown sugar, and vanilla.</li>
 			<li>Stir in the flour, just until combined.</li>
-			<li>If the dough is dry, add 1-2 tsp of milk.</li>
+			<li>If the dough is dry, add <span class="measurement">1</span>-<span class="measurement">2</span> <span class="measure_unit">teaspoon</span> of milk.</li>
 			<li>Stir in mini chocolate chips.</li>
-			<li>Grease hands with cooking spray and roll the dough into 20 small balls (about 1 inch).</li>
+			<li>Grease hands with cooking spray and roll the dough into <span class="measurement">20</span> small <span class="measure_unit">balls</span> (about 1 inch).</li>
 			<li>Refrigerate for 30 minutes, or freeze for 15.</li>
 		</ol>
+		<script src="main.js"></script>
 	</body>				
 </html>

@@ -10,17 +10,23 @@
 	</body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Brownie Cookies from Box Brownie Mix</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 box (18 oz) Box Brownie Mix</li>
-			<li>1/2 cup All Purpose Flour</li>
-			<li>2 large Eggs</li>
-			<li>5 tablespoons Vegetable Oil</li>
-			<li>1 tablespoon Water</li>
-			<li>1/2 cup Chocolate Chips</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> (18 oz) <span class="measure_unit">box</span> Brownie Mix</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+			<li><span class="measurement">2</span> large <span class="measure_unit">Eggs</span></li>
+			<li><span class="measurement">5</span> <span class="measure_unit">tablespoons</span> Vegetable Oil</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Water</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Chocolate Chips</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Preheat oven to 350&#8457; and line a large baking sheet with parchment paper.</li>
 			<li>In a large bowl, combine all of the ingredients and mix well, scraping down the sides as needed. The dough will be very sticky.</li>
 			<li>Scoop out the dough and drop onto the prepared baking sheet about 2 in apart.</li>
@@ -30,5 +36,6 @@
 		</ol>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.sugarandsoul.co/brownie-cookies/">https://www.sugarandsoul.co/brownie-cookies/</a></p>
+		<script src="main.js"></script>
 	</body>		
 </html>

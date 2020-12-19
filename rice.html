@@ -10,20 +10,29 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Rice</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>Rice</li>
-			<li>Water</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span>Rice</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Water</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>In a sauce pan, bring water to a boil.</li>
 			<li>Stir in rice.</li>
 			<li>Cover. Reduce heat and simmer for 20 minutes or until all water is absorbed.</li>
 		</ol>	
 		<h2>Notes</h2>
-		<p>For every cup of rice, add double the amount of water. </p>
-		<p>For drier rice, use 1/4 cup less water.</p>
-		<p>For moister rice, use 1/4 cup more water.</p>
+		<ul id="notes">
+			<li>For every cup of rice, add double the amount of water. </li>
+			<li>For drier rice, use 1/4 cup less water.</li>
+			<li>For moister rice, use 1/4 cup more water.</li>
+		</ul>
+		<script src="main.js"></script>
 	</body>				
 </html>

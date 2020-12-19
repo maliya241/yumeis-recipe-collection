@@ -10,35 +10,41 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Cheesecake Cookies</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>8 oz Cream Cheese, room temperature</li>
-			<li>1/2 cup Butter, room temperature</li>
-			<li>1 1/4 cup Granulated Sugar</li>
-			<li>2 large Eggs</li>
-      			<li>1 teaspoon Vanilla Extract</li>
-			<li>2 1/2 cups All-Purpose Flour</li>
-			<li>2 teaspoons Baking Powder</li>
-			<li>1/2 teaspoon Kosher Salt</li>
+		<ul id="ingredients">
+			<li><span class="measurement">8</span> <span class="measure_unit">ounces</span> Cream Cheese, room temperature</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Butter, room temperature</li>
+			<li><span class="measurement">1 1/4</span> <span class="measure_unit">cup</span> Granulated Sugar</li>
+			<li><span class="measurement">2</span> large <span class="measure_unit">Eggs</span></li>
+      		<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla Extract</li>
+			<li><span class="measurement">2 1/2</span> <span class="measure_unit">cups</span> All-Purpose Flour</li>
+			<li><span class="measurement">2</span> <span class="measure_unit">teaspoons</span> Baking Powder</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">teaspoon</span> Kosher Salt</li>
 			<li>Powdered Sugar</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Preheat the oven to 350&#8457;.</li>
 			<li>Beat cream cheese and butter together at high speed until fluffy and smooth; 1-2 minutes. Add sugar to the butter mixture and beat until fully incorporated and fluffy; 1-2 minutes. Beat in the eggs and vanilla; 1 minute.</li>
 			<li>In a separate, medium-sized bowl, whisk together the flour, baking powder and salt. Gradually add the dry ingredients to the butter mixture and stir just until incorporated. Do not over-mix.</li>
-			<li>Drop by rounded tablespoons onto the prepared baking sheets about 2 inches apart; batter will be sticky. You can put the batter in the fridge for 10-20 minutes to help it firm up a bit.
-</li>
+			<li>Drop by rounded tablespoons onto the prepared baking sheets about 2 inches apart; batter will be sticky. You can put the batter in the fridge for 10-20 minutes to help it firm up a bit.</li>
 			<li>Bake at 350&#8457; for 10-11 minutes. Cookies should be light in color, not browned, and just starting to brown on the bottom. Length of baking time may vary from oven to oven.</li>
 			<li>If desired, sprinkle with powdered sugar or dip in chocolate once cooled.</li>
 		</ol>	
 		<h2>Notes</h2>
-		<ul>
+		<ul id="notes">
 			<li>The vanilla smooths out the flavor, but for a more tart, cheesy flavor, add a teaspoon of lemon juice or no extracts at all.</li>
 			<li>Do not overbake. This can cause the cookies to come out more dry and biscuit like.</li>
 			<li>These cookies do not need to be refrigerated. Can store at room temperature in a sealed container.</li>
 		</ul>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.yellowblissroad.com/wprm_print/21072">https://www.yellowblissroad.com/wprm_print/21072</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

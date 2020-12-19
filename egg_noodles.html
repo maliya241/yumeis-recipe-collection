@@ -10,18 +10,24 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Homemade Egg Noodles</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 large Egg, beaten</li>
-			<li>1/2 teaspoon Salt</li>
-			<li>2 tablespoons Milk</li>
-			<li>1 cup All-Purpose Flour</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> large <span class="measure_unit">Egg</span>, beaten</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">teaspoon</span> Salt</li>
+			<li><span class="measurement">2</span> <span class="measure_unit">tablespoons</span> Milk</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All-Purpose Flour</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Combine egg, salt, milk. Add flour. Stir until the dough mostly comes together.</li>
 			<li>Lightly flour a clean work surface. Drop dough onto surface and form into a ball. Knead the dough for 5-10 minutes, or until the ingredients are fully incorporated and pliable.</li>
-			<li>Roll out dough 1/8 thick. If your dough starts to stick gently lift up and add a bit more flour underneath. </li>
+			<li>Roll out dough 1/8 inch thick. If your dough starts to stick gently lift up and add a bit more flour underneath. </li>
 			<li>Using a pizza cutter, cut the dough in half widthwise and then into strips lengthwise. Make the strips about 1/4 inch thick. After cutting all the strips, make little piles of noodles and let them sit for a few minutes.</li>
 			<li>Drop noodles into boiling water and cook for about 3 minutes.</li>
 		</ol>
@@ -29,5 +35,6 @@
 		<p>Original Recipe: <a href="https://iambaker.net/homemade-egg-noodles">https://iambaker.net/homemade-egg-noodles</a></p>
 		<p>Shaping Pasta: <a href="https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp">https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp</a></p>
 		<p>Storing Pasta Dough: <a href="https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough">https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

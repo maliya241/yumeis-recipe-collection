@@ -10,13 +10,19 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Homemade Three Musketeers</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>2 (16 oz) packages Chocolate CandiQuik Coating</li>
-			<li>2 (7 oz) jars Marshmallow Creme</li>
+		<ul id="ingredients">
+			<li><span class="measurement">2</span> (16 oz) <span class="measure_unit">packages</span> Chocolate CandiQuik Coating</li>
+			<li><span class="measurement">2</span> (7 oz) <span class="measure_unit">jars</span> Marshmallow Creme</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Prepare an 8×8″ pan by lining with aluminum foil and coating with nonstick spray.</li>
 			<li>Melt 1 package of Candiquik in tray, as directed on package.</li>
 			<li>Place marshmallow creme in a medium mixing bowl and microwave for 15 seconds to slightly soften.</li>
@@ -28,5 +34,6 @@
 		</ol>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="http://blog.candiquik.com/top-copycat-candy-bar-recipes/">http://blog.candiquik.com/top-copycat-candy-bar-recipes/</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

@@ -10,28 +10,37 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Soy Sauce Chicken and Rice</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1/8 cup Sugar *</li>
-			<li>1/8 cup Soy Sauce *</li>
-			<li>1 1/2 cups Water *</li>
-			<li>1 teaspoon Salt *</li>
-			<li>3/8 teaspoon Garlic Powder *</li>
-			<li>1/8 teaspoon Ground Ginger *</li>
-			<li>1 Chicken Breast *</li>
-			<li>1/2 cup Rice, uncooked *</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Sugar *</li>
+			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Soy Sauce *</li>
+			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Water *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt *</li>
+			<li><span class="measurement">3/8</span> <span class="measure_unit">teaspoon</span> Garlic Powder *</li>
+			<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Ground Ginger *</li>
+			<li><span class="measurement">1</span> Chicken <span class="measure_unit">Breast</span> *</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Rice, uncooked *</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Combine sugar, soy sauce, water, salt, garlic powder, and ground ginger in a pan; stir until sugar is dissolved.</li>
 			<li>Place chicken in pan and bring to a boil.</li>
 			<li>Stir in rice. Cover the pan.</li>
 			<li>Reduce heat and simmer for 20 minutes or until all water is absorbed and chicken is cooked. </li>
-		</ol>	
-		<h2>Notes</h2>
-		<p>* Changed from Original Recipe</p>
-		<p>Not good leftover.</p>
+		</ol>
+		<h2>Note</h2>
+		<ul id="notes">
+			<li>* Changed from Original Recipe.</li>
+			<li>Not good leftover.</li>
+		</ul>		
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/">https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

@@ -10,17 +10,23 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Breaded Chicken Strips</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>8 ounces Breadcrumbs</li>
-			<li>1 cup All Purpose Flour</li>
-			<li>2 large Eggs</li>
-			<li>3 Boneless Skinless Chicken Breasts</li>
+		<ul id="ingredients">
+			<li><span class="measurement">8</span> <span class="measure_unit">ounces</span> Breadcrumbs</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+			<li><span class="measurement">2</span> large <span class="measure_unit">Eggs</span></li>
+			<li><span class="measurement">3</span> Boneless Skinless Chicken <span class="measure_unit">Breasts</span></li>
 			<li>Vegetable Oil</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
-			<li>Pour the flour (can add salt and pepper for flavoring), eggs (beaten), and breadcrumbs (can be seasoned with 3 tablespoons grated parmesan, 2 tablespoons minced fresh parsley leaves, 3/4 teaspoon kosher salt and black pepper or another seasoning) into their own separate shallow dishes.</li>
+		<ol id="directions">
+			<li>Pour the flour (can add salt and pepper for flavoring), eggs (beaten), and breadcrumbs (can be seasoned with <span class="measurement">3</span> <span class="measure_unit">tablespoons</span> grated parmesan, <span class="measurement">2</span> <span class="measure_unit">tablespoons</span> minced fresh parsley leaves, <span class="measurement">3/4</span> <span class="measure_unit">teaspoon</span> kosher salt, and black pepper, or another seasoning) into their own separate shallow dishes.</li>
 			<li>Pound the chicken breasts into even thickness.</li>
 			<li>Cut the chicken into 1 1/2 inch strips. Then pat dry.</li>
 			<li>Dip each strip into the flour, then shake off the excess.</li>
@@ -34,5 +40,6 @@
 		<h2>Sources</h2>
 		<p>Homemade Breadcrumbs Recipe: <a href="breadcrumbs.html">breadcrumbs.html</a></p>
 		<p>Orignal Recipe: <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/breaded-chicken-strips-recipe-1953635">https://www.foodnetwork.com/recipes/food-network-kitchen/breaded-chicken-strips-recipe-1953635</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

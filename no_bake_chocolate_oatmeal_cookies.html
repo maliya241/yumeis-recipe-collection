@@ -10,27 +10,36 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>No Bake Chocolate Oatmeal Cookies</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier </span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 cup Granulated Sugar *</li>
-			<li>4 tablespoons Margarine or Butter *</li>
-			<li>1/4 cup Low-Fat Milk *</li>
-			<li>1/6 cup Baking Cocoa *</li>
-			<li>1 1/2 cups Quick or Old Fashioned Oats, uncooked *</li>
-			<li>1 teaspoon Vanilla Extract **</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Granulated Sugar *</li>
+			<li><span class="measurement">4</span> <span class="measure_unit">tablespoons</span> Margarine or Butter *</li>
+			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Low-Fat Milk *</li>
+			<li><span class="measurement">1/6</span> <span class="measure_unit">cup</span> Baking Cocoa *</li>
+			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Quick or Old Fashioned Oats, uncooked *</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla Extract **</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
-			<li>In large saucepan, combine sugar, margarine, milk and cocoa. Bring to boil over medium heat, stirring frequently.</li>
+		<ol id="directions">
+			<li>In large saucepan, combine sugar, margarine, milk, and cocoa. Bring to boil over medium heat, stirring frequently.</li>
 			<li>Continue boiling 3 minutes, stirring frequently.</li>
 			<li>Remove from heat. Stir in oats. If using old fashioned oats, cool mixture in saucepan for 5 minutes.</li>
 			<li>Drop by tablespoonfuls onto waxed paper.</li>
 			<li>Let stand until firm. Store tightly covered.</li>
 		</ol>
 		<h2>Note</h2>
-		<p>* Half the Original Recipe.</p>
-		<p>** Added ingredient.</p>
+		<ul id="notes">
+			<li>* Half the Original Recipe.</li>
+			<li>** Added ingredient.</li>
+		</ul>
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.quakeroats.com/cooking-and-recipes/3-minute-no-bake-cookies">https://www.quakeroats.com/cooking-and-recipes/3-minute-no-bake-cookies</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

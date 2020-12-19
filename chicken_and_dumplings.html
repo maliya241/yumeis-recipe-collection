@@ -10,18 +10,24 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Chicken and Dumplings</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 1/2 cups Chicken, cooked and shredded</li>
-			<li>1 quart Chicken Broth (or 8 cups of boiling Water and 6 teaspoons of Chicken Broth Powder)</li>
-			<li>1 cup All-Purpose Flour</li>
-			<li>1/4 teaspoon Baking Podwer</li>
-			<li>1 tablespoon cold Butter, cubed</li>
-			<li>1/2 cup Milk</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Chicken, cooked and shredded</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">quart</span> Chicken Broth (or <span class="measurement">8</span> <span class="measure_unit">cups</span> of boiling Water and <span class="measurement">6</span> <span class="measure_unit">teaspoons</span> of Chicken Broth Powder)</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+			<li><span class="measurement">1/4</span> <span class="measure_unit">teaspoon</span> Baking Podwer</li>
+			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> cold Butter, cubed</li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Milk</li>
 			<li>Salt</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Preheat oven to 350&#8457;.</li>
 			<li>Spray a baking sheet with nonstick cooking spray.</li>
 			<li>Drizzle a little olive oil on the chicken and season with salt and pepper.</li>
@@ -42,5 +48,6 @@
 		</ol>	
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481">https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>

@@ -10,17 +10,23 @@
 	<body>
 		<p id="home"><a href="index.html">home</a></p>
 		<h1>Cake Mix Brownies</h1>
+		<div id="serving_size_multiplier_container"> 
+			<span>Recipe Multiplier</span>
+			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
+			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
+			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		</div>
 		<h2>Ingredients</h2>
-		<ul>
-			<li>1 box Cake Mix</li>
-			<li>1/4 cup Vegetable Oil</li>
-			<li>1/3 cup Milk</li>
-			<li>1 large Egg</li>
-			<li>1/2 bag Chocolate Chips</li>
+		<ul id="ingredients">
+			<li><span class="measurement">1</span> <span class="measure_unit">box</span> Cake Mix</li>
+			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Vegetable Oil</li>
+			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Milk</li>
+			<li><span class="measurement">1</span> large <span class="measure_unit">Egg</span></li>
+			<li><span class="measurement">1/2</span> <span class="measure_unit">bag</span> Chocolate Chips</li>
 			<li>Spray On Cooking Oil (like Pam)</li>
 		</ul>
 		<h2>Directions</h2>
-		<ol>
+		<ol id="directions">
 			<li>Preheat oven to 350&#8457;.</li>
 			<li>Oil a 9x9 pan.</li>
 			<li>Mix all ingredients with a strong spoon. It will be thick and very uncake-like.</li>
@@ -31,5 +37,6 @@
 		</ol>	
 		<h2>Source</h2>
 		<p>Original Recipe: <a href="https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/">https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/</a></p>
+		<script src="main.js"></script>
 	</body>				
 </html>
