@@ -80,7 +80,7 @@ function after_multiplier_change() {
 		decimal_part_multiplied_decimal_ingredients[i] = String(multiplied_decimal_ingredients[i]).split(".")[1];
 		var one_third = String(1/3).split(".")[1];
 		var two_thirds = String(2/3).split(".")[1];
-		if (decimal_part_multiplied_decimal_ingredients[i] == undefined) {
+		if (decimal_part_multiplied_decimal_ingredients[i] === undefined) {
 			multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i];
 		} else if (decimal_part_multiplied_decimal_ingredients[i] == 25) {
 			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
