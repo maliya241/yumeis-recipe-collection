@@ -18,11 +18,11 @@ for (i = 0; i < number_of_ingredients; i++) {
 	fraction_ingredient_measurements[i] = fraction_ingredient_measurements[i].split(""); 
 	
 	//Convert string fractions to decimal numbers
-	if (fraction_ingredient_measurements[i].length == 6) {
+	if (fraction_ingredient_measurements[i].length == 6 && fraction_ingredient_measurements[i][3] == "/") {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) + Number(fraction_ingredient_measurements[i][2]) / Number(fraction_ingredient_measurements[i][4]+fraction_ingredient_measurements[i][5]);
-	} else if (fraction_ingredient_measurements[i].length == 5) {
+	} else if (fraction_ingredient_measurements[i].length == 5 && fraction_ingredient_measurements[i][3] == "/") {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) + Number(fraction_ingredient_measurements[i][2]) / Number(fraction_ingredient_measurements[i][4]);
-	} else if (fraction_ingredient_measurements[i].length == 3 && fraction_ingredient_measurements[i][0] == "/") {
+	} else if (fraction_ingredient_measurements[i].length == 3 && fraction_ingredient_measurements[i][1] == "/") {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) / Number(fraction_ingredient_measurements[i][2]);
 	} else {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]);
