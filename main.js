@@ -14,7 +14,7 @@ for (i = 0; i < number_of_ingredients; i++) {
 	//read in measure unit string
 	original_ingredient_measurement_units[i] = document.getElementsByClassName("measure_unit")[i].innerHTML; 
 	
-	//Nested array. For six element nested arrays, 0 == whole number, 1 == " ", 2 == numerator, 3 == "/", 4 == first denominator, 5 == second digit denominator; For five element nested arrays, 0 == whole number, 1 == " ", 2 == numerator, 3 == "/", 4 == denominator; For three element nested arrays, 0 == numerator, 1 == "/" 2 == denominator
+	//Nested array. For six element nested arrays, 0 == whole number, 1 == " ", 2 == numerator, 3 == "/", 4 == first denominator, 5 == second digit denominator; For five element nested arrays, 0 == whole number, 1 == " ", 2 == numerator, 3 == "/", 4 == denominator; For three element nested arrays, 0 == numerator, 1 == "/" 2 == denominator or all are whole numbers
 	fraction_ingredient_measurements[i] = fraction_ingredient_measurements[i].split(""); 
 	
 	//Convert string fractions to decimal numbers
@@ -22,7 +22,7 @@ for (i = 0; i < number_of_ingredients; i++) {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) + Number(fraction_ingredient_measurements[i][2]) / Number(fraction_ingredient_measurements[i][4]+fraction_ingredient_measurements[i][5]);
 	} else if (fraction_ingredient_measurements[i].length == 5) {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) + Number(fraction_ingredient_measurements[i][2]) / Number(fraction_ingredient_measurements[i][4]);
-	} else if (fraction_ingredient_measurements[i].length == 3) {
+	} else if (fraction_ingredient_measurements[i].length == 3 && fraction_ingredient_measurements[i][0] == "/") {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]) / Number(fraction_ingredient_measurements[i][2]);
 	} else {
 		decimal_ingredient_measurements[i] = Number(fraction_ingredient_measurements[i][0]);
