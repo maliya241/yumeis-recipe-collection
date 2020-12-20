@@ -98,13 +98,13 @@ function after_multiplier_change() {
 			} else {
 				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 3/4";
 			}
-		} else if (decimal_part_multiplied_decimal_ingredients[i] == one_third) {
+		} else if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == one_third.substr(0, 4)) {
 			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
 				multiplied_fraction_ingredients[i] = "1/3";
 			} else {
 				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 1/3";
 			}
-		} else if (decimal_part_multiplied_decimal_ingredients[i] == two_thirds) {
+		} else if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == two_thirds.substr(0, 4)) {
 			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
 				multiplied_fraction_ingredients[i] = "2/3";
 			} else {
