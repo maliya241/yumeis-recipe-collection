@@ -57,14 +57,16 @@ function after_multiplier_change() {
 		multiplied_decimal_ingredients[i] = decimal_ingredient_measurements[i] * multiplier;
 		
 		//converts teaspoons to tablespoons and tablespoons to cups when appropriate
-		if (original_ingredient_measurement_units[i].match(/teaspoon$/g) == "teaspoon" || original_ingredient_measurement_units[i].match(/teaspoons$/g) == "teaspoons" || original_ingredient_measurement_units[i].match(/tablespoon$/g) == "tablespoon" ||original_ingredient_measurement_units[i].match(/tablespoons$/g) == "tablespoons") {
+		if (original_ingredient_measurement_units[i].match(/teaspoon$/g) == "teaspoon" || original_ingredient_measurement_units[i].match(/teaspoons$/g) == "teaspoons") {
 			var tsp_to_tbsp_decimal_value = Number("0." + String(multiplied_decimal_ingredients[i]/3).split(".")[1]);
-			var tbsp_to_cup_decimal_value = Number("0." + String(multiplied_decimal_ingredients[i]/16).split(".")[1])
 			if (tsp_to_tbsp_decimal_value == 1 || tsp_to_tbsp_decimal_value == 0.25 || tsp_to_tbsp_decimal_value == 0.5 || tsp_to_tbsp_decimal_value == 0.75) {
 				//converts teaspoons to tablespoons
 				multiplied_decimal_ingredients[i] = multiplied_decimal_ingredients[i]/3;
 				modified_ingredient_measurement_units[i] = "tablespoon";
-			} else if (tbsp_to_cup_decimal_value == 1 || tbsp_to_cup_decimal_value == 0.125 || tbsp_to_cup_decimal_value == 0.25 || tbsp_to_cup_decimal_value == 0.375 || tbsp_to_cup_decimal_value == 0.5 || tbsp_to_cup_decimal_value == 0.625 || tbsp_to_cup_decimal_value == 0.75 || tbsp_to_cup_decimal_value == 0.875 || tbsp_to_cup_decimal_value == (1/3) || tbsp_to_cup_decimal_value == (2/3)) {
+			}
+		} else if (original_ingredient_measurement_units[i].match(/tablespoon$/g) == "tablespoon" ||original_ingredient_measurement_units[i].match(/tablespoons$/g) == "tablespoons") {
+			var tbsp_to_cup_decimal_value = Number("0." + String(multiplied_decimal_ingredients[i]/16).split(".")[1]);
+			if (tbsp_to_cup_decimal_value == 1 || tbsp_to_cup_decimal_value == 0.125 || tbsp_to_cup_decimal_value == 0.25 || tbsp_to_cup_decimal_value == 0.375 || tbsp_to_cup_decimal_value == 0.5 || tbsp_to_cup_decimal_value == 0.625 || tbsp_to_cup_decimal_value == 0.75 || tbsp_to_cup_decimal_value == 0.875 || tbsp_to_cup_decimal_value == (1/3) || tbsp_to_cup_decimal_value == (2/3)) {
 				//converts tablespoons to cups
 				multiplied_decimal_ingredients[i] = multiplied_decimal_ingredients[i]/16;
 				modified_ingredient_measurement_units[i] = "cup";
