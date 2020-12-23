@@ -123,7 +123,7 @@ function after_multiplier_change() {
 			} else {
 				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 1/6";
 			}
-		}  lse if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == five_sixth.substr(0, 4)) {
+		}  else if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == five_sixth.substr(0, 4)) {
 			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
 				multiplied_fraction_ingredients[i] = "5/6";
 			} else {
