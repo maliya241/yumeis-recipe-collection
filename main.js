@@ -59,6 +59,8 @@ function after_multiplier_change() {
 		decimal_part_multiplied_decimal_ingredients[i] = String(multiplied_decimal_ingredients[i]).split(".")[1];
 		var one_third = String(1/3).split(".")[1];
 		var two_thirds = String(2/3).split(".")[1];
+		var one_sixth = String(1/6).split(".")[1];
+		var five_sixth = String(5/6).split(".")[1];
 		if (decimal_part_multiplied_decimal_ingredients[i] === undefined) {
 			multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i];
 		} else if (decimal_part_multiplied_decimal_ingredients[i] == 25) {
@@ -114,6 +116,18 @@ function after_multiplier_change() {
 				multiplied_fraction_ingredients[i] = "7/8";
 			} else {
 				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 7/8";
+			}
+		}  else if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == one_sixth.substr(0, 4)) {
+			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
+				multiplied_fraction_ingredients[i] = "1/6";
+			} else {
+				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 1/6";
+			}
+		}  lse if (decimal_part_multiplied_decimal_ingredients[i].substr(0, 4) == five_sixth.substr(0, 4)) {
+			if (whole_number_part_multiplied_decimal_ingredients[i] === 0) {
+				multiplied_fraction_ingredients[i] = "5/6";
+			} else {
+				multiplied_fraction_ingredients[i] = whole_number_part_multiplied_decimal_ingredients[i] + " 5/6";
 			}
 		} else {
 			multiplied_fraction_ingredients[i] = multiplied_decimal_ingredients[i];
