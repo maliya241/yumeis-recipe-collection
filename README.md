@@ -1,9 +1,9 @@
 # YuMei's Recipe Collection
 
 ## Introduction
-This website contains a collection of recipes. 
+This project was created to contain my recipe collection. 
 
-## Techonologies
+## Technologies
 This project is created with: 
 * HTML
 * CSS
