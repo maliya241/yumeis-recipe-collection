@@ -5,40 +5,51 @@
 		<title>Yogurt Chicken</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="yogurt chicken plain yogurt skinless boneless chicken breasts lemon breadcrumbs garlic powder salt butter oven bake">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Yogurt Chicken</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Yogurt Chicken</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">4</span> skinless boneless Chicken <span class="measure_unit">Breasts</span></li>
+					<li><span class="measurement">3/4</span> <span class="measure_unit">cup</span> Plain Low-Fat Yogurt</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">Lemon</span>, juiced</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Breadcrumbs</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">teaspoon</span> Garlic Powder</li>
+					<li>Salt</li>
+				</ul>
+			</div>
+			<div id="directions">
+			<h2>Directions</h2>
+			<ol id="directions_list">
+				<li>Preheat oven to 350&#8457;.</li>
+				<li>Place yogurt in a small bowl and stir until creamy smooth. </li>
+				<li>Add lemon juice with the creamy smooth yogurt and stir together.</li>
+				<li>In another small bowl, combine the breadcrumbs, garlic powder, and salt; mix together.</li>
+				<li>Rinse chicken breats and pat dry.</li>
+				<li>Dip each breast in the lemon and yogurt mixture, then in the breadcrumb mixture.</li>
+				<li>Bake for 1 hour.</li>
+				<li>Let cool for 5 to 10 minutes before serving.</li>
+			</ol>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Homemade Breadcrumbs Recipe: <a href="breadcrumbs.html">breadcrumbs.html</a></li>
+					<li>Original Recipe: <a href="https://www.allrecipes.com/recipe/15221/yogurt-chicken/">https://www.allrecipes.com/recipe/15221/yogurt-chicken/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">4</span> skinless boneless Chicken <span class="measure_unit">Breasts</span></li>
-			<li><span class="measurement">3/4</span> <span class="measure_unit">cup</span> Plain Low-Fat Yogurt</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">Lemon</span>, juiced</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Breadcrumbs</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">teaspoon</span> Garlic Powder</li>
-			<li>Salt</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 350&#8457;.</li>
-			<li>Place yogurt in a small bowl and stir until creamy smooth. </li>
-			<li>Add lemon juice with the creamy smooth yogurt and stir together.</li>
-			<li>In another small bowl, combine the breadcrumbs, garlic powder, and salt; mix together.</li>
-			<li>Rinse chicken breats and pat dry.</li>
-			<li>Dip each breast in the lemon and yogurt mixture, then in the breadcrumb mixture.</li>
-			<li>Bake for 1 hour.</li>
-			<li>Let cool for 5 to 10 minutes before serving.</li>
-		</ol>		
-		<h2>Source</h2>
-		<p>Homemade Breadcrumbs Recipe: <a href="breadcrumbs.html">breadcrumbs.html</a></p>
-		<p>Original Recipe: <a href="https://www.allrecipes.com/recipe/15221/yogurt-chicken/">https://www.allrecipes.com/recipe/15221/yogurt-chicken/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

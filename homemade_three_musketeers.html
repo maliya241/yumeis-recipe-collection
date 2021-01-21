@@ -5,35 +5,46 @@
 		<title>Homemade Three Musketeers</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="three musketeers chocolate marshmallow creme microwave">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Homemade Three Musketeers</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Homemade Three Musketeers</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">2</span> (16 oz) <span class="measure_unit">packages</span> Chocolate CandiQuik Coating</li>
+					<li><span class="measurement">2</span> (7 oz) <span class="measure_unit">jars</span> Marshmallow Creme</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Prepare an 8×8″ pan by lining with aluminum foil and coating with nonstick spray.</li>
+					<li>Melt <span class="measurement">1</span> <span class="measure_unit">package</span> of Candiquik in tray, as directed on package.</li>
+					<li>Place marshmallow creme in a medium mixing bowl and microwave for 15 seconds to slightly soften.</li>
+					<li>Pour the chocolate Candiquik on top of the marshmallow creme and use a spoon to stir together.</li>
+					<li>Spoon mixture into prepared pan and smooth evenly across the bottom. (Mixture will be thick!). Place in the freezer for 30-45 minutes to firm up.</li>
+					<li>Melt remaining package(s) of Chocolate Candiquik.</li>
+					<li>Remove from freezer and cut into 2″ bars. Dip each bar in the tray of CandiQuik and place on wax paper to set.</li>
+					<li>*To dip the bars, place each bar on a fork, lowered into the Candiquik and used a spoon to completely cover the bar; let the excess coating drip off and place on wax or parchment paper to set.</li>
+				</ol>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="http://blog.candiquik.com/top-copycat-candy-bar-recipes/">http://blog.candiquik.com/top-copycat-candy-bar-recipes/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">2</span> (16 oz) <span class="measure_unit">packages</span> Chocolate CandiQuik Coating</li>
-			<li><span class="measurement">2</span> (7 oz) <span class="measure_unit">jars</span> Marshmallow Creme</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Prepare an 8×8″ pan by lining with aluminum foil and coating with nonstick spray.</li>
-			<li>Melt 1 package of Candiquik in tray, as directed on package.</li>
-			<li>Place marshmallow creme in a medium mixing bowl and microwave for 15 seconds to slightly soften.</li>
-			<li>Pour the chocolate Candiquik on top of the marshmallow creme and use a spoon to stir together.</li>
-			<li>Spoon mixture into prepared pan and smooth evenly across the bottom. (Mixture will be thick!). Place in the freezer for 30-45 minutes to firm up.</li>
-			<li>Melt remaining package of Chocolate Candiquik.</li>
-			<li>Remove from freezer and cut into 2″ bars. Dip each bar in the tray of CandiQuik and place on wax paper to set.</li>
-			<li>*To dip the bars, I placed each bar on a fork, lowered into the Candiquik and used a spoon to completely cover the bar; let the excess coating drip off and place on wax or parchment paper to set.</li>
-		</ol>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="http://blog.candiquik.com/top-copycat-candy-bar-recipes/">http://blog.candiquik.com/top-copycat-candy-bar-recipes/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

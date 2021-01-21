@@ -5,49 +5,60 @@
 		<title>Chicken and Dumplings</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="chicken and dumplings shredded chicken chicken broth all purpose flour baking powder butter milk oven bake stove top stovetop">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Chicken and Dumplings</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier</span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Chicken and Dumplings</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Chicken, cooked and shredded</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">quart</span> Chicken Broth (or <span class="measurement">8</span> <span class="measure_unit">cups</span> of boiling Water and <span class="measurement">6</span> <span class="measure_unit">teaspoons</span> of Chicken Broth Powder)</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">teaspoon</span> Baking Podwer</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> cold Butter, cubed</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Milk</li>
+					<li>Salt</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Preheat oven to 350&#8457;.</li>
+					<li>Spray a baking sheet with nonstick cooking spray.</li>
+					<li>Drizzle a little olive oil on the chicken and season with salt and pepper.</li>
+					<li>Bake for about 45 minutes.</li>
+					<li>Once the chicken is cooked, shred it with two forks.</li>
+					<li>Pour the chicken stock or broth into a large pot and start warming it up on the stove top while you make the dumplings.</li>
+					<li>In a medium bowl, combine flour and baking powder. Then add in cubed butter.</li>
+					<li>Combine using your fingers, fork or pastry cutter.</li>
+					<li>Pour in the milk. Mix it all together.</li>
+					<li>Dust your counter with a generous amount of flour. Place dumpling dough on the counter and dust it with more flour.</li>
+					<li>With a rolling pin, roll the dough out to about 1/4" thickness.</li>
+					<li>Be sure to add flour as necessary to keep it from sticking underneath or to your rolling pin.</li>
+					<li>Using a knife or a pizza cutter, start cutting out your dumplings into squares.</li>
+					<li>Dust dumplings with a bit more flour. The extra flour is all gonna help keep them from sticking but will also thicken your chicken broth some as well when you add them to the pot.</li>
+					<li>Bring chicken broth up to a boil. Add in shredded chicken and stir.</li>
+					<li>Begin adding dumplings one at a time so they don't all stick together. Stir frequently while adding them.</li>
+					<li>Allow dumplings to cook for about 15-20 minutes. You should notice your broth starting to thicken (from the extra flour) and your dumplings may start to sink a little to the bottom because they are soaking up the broth. Take one out and taste test it. It shouldn't have a doughy taste anymore.</li>
+				</ol>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481">https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Chicken, cooked and shredded</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">quart</span> Chicken Broth (or <span class="measurement">8</span> <span class="measure_unit">cups</span> of boiling Water and <span class="measurement">6</span> <span class="measure_unit">teaspoons</span> of Chicken Broth Powder)</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">teaspoon</span> Baking Podwer</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> cold Butter, cubed</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Milk</li>
-			<li>Salt</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 350&#8457;.</li>
-			<li>Spray a baking sheet with nonstick cooking spray.</li>
-			<li>Drizzle a little olive oil on the chicken and season with salt and pepper.</li>
-			<li>Bake for about 45 minutes.</li>
-			<li>Once the chicken is cooked, shred it with two forks.</li>
-			<li>Pour the chicken stock or broth into a large pot and start warming it up on the stove top while you make the dumplings.</li>
-			<li>In a medium bowl, combine flour and baking powder. Then add in cubed butter.</li>
-			<li>Combine using your fingers, fork or pastry cutter.</li>
-			<li>Pour in the milk. Mix it all together.</li>
-			<li>Dust your counter with a generous amount of flour. Place dumpling dough on the counter and dust it with more flour.</li>
-			<li>With a rolling pin, roll the dough out to about 1/4" thickness.</li>
-			<li>Be sure to add flour as necessary to keep it from sticking underneath or to your rolling pin.</li>
-			<li>Using a knife or a pizza cutter, start cutting out your dumplings into squares.</li>
-			<li>Dust dumplings with a bit more flour. The extra flour is all gonna help keep them from sticking but will also thicken your chicken broth some as well when you add them to the pot.</li>
-			<li>Bring chicken broth up to a boil. Add in shredded chicken and stir.</li>
-			<li>Begin adding dumplings one at a time so they don't all stick together. Stir frequently while adding them.</li>
-			<li>Allow dumplings to cook for about 15-20 minutes. You should notice your broth starting to thicken (from the extra flour) and your dumplings may start to sink a little to the bottom because they are soaking up the broth. Take one out and taste test it. It shouldn't have a doughy taste anymore.</li>
-		</ol>	
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481">https://www.thecountrycook.net/old-fashioned-chicken-and-dumplings/#wprm-recipe-container-20481</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

@@ -1,0 +1,40 @@
+@media only screen and (min-width: 700px) { 
+/******************************************************************************
+tablets and up
+******************************************************************************/
+	body {
+		width: 80%;
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+	
+	#home {
+		font-size: 1.75em;
+	}
+	
+	p, li {
+		font-size: 1.25em;
+	}
+	
+	#recipes_list li a:hover, #recipes_list li a:focus {
+		font-size: 1.75em; 
+	}
+	
+	#search_input:hover, #search_input:focus {
+		border: 0.5em solid #44786A;
+	}
+	
+	#serving_size_multiplier {
+		width: 3em;
+	}
+	
+	#recipe_multiplier_text, #serving_size_multiplier, #multiplier_increment, #multiplier_decrement { 
+		font-size: 1.25em;
+	}
+}

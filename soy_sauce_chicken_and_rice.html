@@ -5,42 +5,55 @@
 		<title>Soy Sauce Chicken and Rice</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="soy sauce chicken and rice sugar garlic powder ground ginger stove">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Soy Sauce Chicken and Rice</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Soy Sauce Chicken and Rice</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Sugar *</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Soy Sauce *</li>
+					<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Water *</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt *</li>
+					<li><span class="measurement">3/8</span> <span class="measure_unit">teaspoon</span> Garlic Powder *</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Ground Ginger *</li>
+					<li><span class="measurement">1</span> Chicken <span class="measure_unit">Breast</span> *</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Rice, uncooked *</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Combine sugar, soy sauce, water, salt, garlic powder, and ground ginger in a pan; stir until sugar is dissolved.</li>
+					<li>Place chicken in pan and bring to a boil.</li>
+					<li>Stir in rice. Cover the pan.</li>
+					<li>Reduce heat and simmer for 20 minutes or until all water is absorbed and chicken is cooked. </li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>* Changed from Original Recipe.</li>
+					<li>Not good leftover.</li>
+				</ul>		
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/">https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Sugar *</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Soy Sauce *</li>
-			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Water *</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt *</li>
-			<li><span class="measurement">3/8</span> <span class="measure_unit">teaspoon</span> Garlic Powder *</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Ground Ginger *</li>
-			<li><span class="measurement">1</span> Chicken <span class="measure_unit">Breast</span> *</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Rice, uncooked *</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Combine sugar, soy sauce, water, salt, garlic powder, and ground ginger in a pan; stir until sugar is dissolved.</li>
-			<li>Place chicken in pan and bring to a boil.</li>
-			<li>Stir in rice. Cover the pan.</li>
-			<li>Reduce heat and simmer for 20 minutes or until all water is absorbed and chicken is cooked. </li>
-		</ol>
-		<h2>Note</h2>
-		<ul id="notes">
-			<li>* Changed from Original Recipe.</li>
-			<li>Not good leftover.</li>
-		</ul>		
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/">https://www.allrecipes.com/recipe/222712/soy-sauce-chicken/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

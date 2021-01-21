@@ -5,47 +5,60 @@
 		<title>Cheddar Baked Chicken</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="cheddar baked chicken butter all purpose flour salt pepper garlic powder eggs milk cheddar cheese breadcrumbs bread crumbs chicken breasts">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Cheddar Baked Chicken</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier</span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Cheddar Baked Chicken</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Butter *</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Flour *</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Black Pepper</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Garlic Powder</li>
+					<li><span class="measurement">2</span> <span class="measure_unit">Eggs</span></li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Milk</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Cheddar Cheese, shredded</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Breadcrumbs *</li>
+					<li><span class="measurement">2</span> boneless skinless Chicken <span class="measure_unit">Breasts</span></li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Preheat oven to 400&#8457;.</li>
+					<li>In a small mixing bowl, combine flour, salt, pepper, and garlic powder; set aside.</li>
+					<li>In another bowl, whisk together eggs and milk; set aside.</li>
+					<li>In a third bowl, combine cheddar cheese and breadcrumbs; set aside.</li>
+					<li>Dip each chicken breast in the flour mixture, then the egg mixture and finish by coating it in the breadcrumb mixture.</li>
+					<li>Place coated chicken breasts in prepared pan and use the butter to put a pat of butter on top of each piece of chicken.</li>
+					<li>Bake for 25 minutes, or until chicken is cooked through.</li>
+				</ol>	
+			</div>
+			<div id="notes">
+				<h2>Note</h2>
+				<ul id="notes_list">
+					<li>* Changed from Original Recipe.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Sources</h2>
+				<ul id="source_list">
+					<li>Homemade Breadcrumbs Recipe: <a href="breadcrumbs.html">breadcrumbs.html</a></li>
+					<li>Original Recipe: <a href="https://www.sixsistersstuff.com/recipe/cheddar-baked-chicken/">https://www.sixsistersstuff.com/recipe/cheddar-baked-chicken/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Butter *</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Flour *</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Black Pepper</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Garlic Powder</li>
-			<li><span class="measurement">2</span> <span class="measure_unit">Eggs</span></li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Milk</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Cheddar Cheese, shredded</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Breadcrumbs *</li>
-			<li><span class="measurement">2</span> boneless skinless Chicken <span class="measure_unit">Breasts</span></li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 400&#8457;.</li>
-			<li>In a small mixing bowl, combine flour, salt, pepper, and garlic powder; set aside.</li>
-			<li>In another bowl, whisk together eggs and milk; set aside.</li>
-			<li>In a third bowl, combine cheddar cheese and breadcrumbs; set aside.</li>
-			<li>Dip each chicken breast in the flour mixture, then the egg mixture and finish by coating it in the breadcrumb mixture.</li>
-			<li>Place coated chicken breasts in prepared pan and use the butter to put a pat of butter on top of each piece of chicken.</li>
-			<li>Bake for 25 minutes, or until chicken is cooked through.</li>
-		</ol>	
-		<h2>Note</h2>
-		<ul id="notes">
-			<li>* Changed from Original Recipe</li>
-		</ul>
-		<h2>Sources</h2>
-		<p>Homemade Breadcrumbs Recipe: <a href="breadcrumbs.html">breadcrumbs.html</a></p>
-		<p>Original Recipe: <a href="https://www.sixsistersstuff.com/recipe/cheddar-baked-chicken/">https://www.sixsistersstuff.com/recipe/cheddar-baked-chicken/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

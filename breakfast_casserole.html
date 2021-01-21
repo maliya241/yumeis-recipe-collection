@@ -5,39 +5,52 @@
 		<title>Breakfast Casserole</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="breakfast casserole ground beef sausage crescent rolls cream cheese oven stove">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Breakfast Casserole</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier</span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Breakfast Casserole</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1</span> (8 oz) <span class="measure_unit">can</span> Crescent Rolls *</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">pound</span> Ground Beef or Sausage *</li>
+					<li><span class="measurement">4</span> <span class="measure_unit">ounces</span> Cream Cheese *</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Heat oven to 375&#8457;.</li>
+					<li>Unroll half of crescent roll can in an ungreased baking dish. Firmly press perforations to seal the dough.</li>
+					<li>In a skillet, brown meat over medium heat, stirring frequently. Discard drippings. Add cream cheese to the same skillet, and mix together with the meat.</li>
+					<li>Spoon cream cheese and meat mixture evenly over crust in baking dish.</li>
+					<li>Use the rest of the crescent roll dough to cover the cream cheese and meat mixture.</li>
+					<li>Bake 21 to 26 minutes or until golden brown.</li>
+					<li>Cool 15 minutes. Cut into small squares.</li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Note</h2>
+				<ul id="notes_list">
+					<li>* Half of the Original Recipe.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.pillsbury.com/recipes/sausage-and-cheese-crescent-squares/f2b22bde-19e4-4447-aa99-30e90ee5a38f">https://www.pillsbury.com/recipes/sausage-and-cheese-crescent-squares/f2b22bde-19e4-4447-aa99-30e90ee5a38f</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1</span> (8 oz) <span class="measure_unit">can</span> Crescent Rolls *</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">pound</span> Ground Beef or Sausage *</li>
-			<li><span class="measurement">4</span> <span class="measure_unit">ounces</span> Cream Cheese *</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Heat oven to 375&#8457;.</li>
-			<li>Unroll half of crescent roll can in an ungreased baking dish. Firmly press perforations to seal the dough.</li>
-			<li>In a skillet, brown meat over medium heat, stirring frequently. Discard drippings. Add cream cheese to the same skillet, and mix together with the meat.</li>
-			<li>Spoon cream cheese and meat mixture evenly over crust in baking dish.</li>
-			<li>Use the rest of the crescent roll dough to cover the cream cheese and meat mixture.</li>
-			<li>Bake 21 to 26 minutes or until golden brown.</li>
-			<li>Cool 15 minutes. Cut into small squares.</li>
-		</ol>	
-		<h2>Note</h2>
-		<ul id="notes">
-			<li>* Half of the Original Recipe</li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.pillsbury.com/recipes/sausage-and-cheese-crescent-squares/f2b22bde-19e4-4447-aa99-30e90ee5a38f">https://www.pillsbury.com/recipes/sausage-and-cheese-crescent-squares/f2b22bde-19e4-4447-aa99-30e90ee5a38f</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

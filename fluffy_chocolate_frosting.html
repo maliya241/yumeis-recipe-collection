@@ -5,46 +5,59 @@
 		<title>Fluffy Chocolate Frosting</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="fluffy chocolate frosting margarine hot water cocoa powder vanilla powdered sugar dairy free dairy-free stove easy no bake">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Fluffy Chocolate Frosting</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Fluffy Chocolate Frosting</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Margarine, cold *</li>
+					<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Water, hot</li>
+					<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Cocoa Powder</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla</li>
+					<li><span class="measurement">4</span> <span class="measure_unit">cups</span> Powdered Sugar</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Place water in a microwave-safe bowl and heat until it just begins to boil, approximately 1 1/2 minutes.</li>
+					<li>Add cocoa powder to the hot water. Set aside.</li>
+					<li>Place cold margarine in a large bowl. Use a hand mixer and mix for 1 – 2 minutes until it begins to soften.</li>
+					<li>Add the vanilla to the margarine. Mix well.</li>
+					<li>Add 2 cups of powdered sugar to the margarine and mix well.</li>
+					<li>Add the cocoa mixture to the bowl and mix well.</li>
+					<li>Slowly add the remaining powdered sugar until you reach the desired consistency.</li>
+					<li>Whip the frosting mixture for 1 more minute.</li>
+					<li>Then use the icing to decorate your cake or cupcakes.</li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>* For dairy-free frosting, use dairy-free margarine.</li>
+					<li>If your frosting is not as stiff as you would like it, then add more powdered sugar.</li>
+					<li>If your frosting is too thick add one teaspoon of cold water. Mix well. Repeat as needed. Do not add more than a teaspoon of water at a time because your frosting can quickly go from too thick to too thin.</li>
+					<li>If your frosting is too sweet, add a pinch of salt.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://premeditatedleftovers.com/recipes-cooking-tips/make-fluffy-dairy-free-chocolate-frosting/">https://premeditatedleftovers.com/recipes-cooking-tips/make-fluffy-dairy-free-chocolate-frosting/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Margarine, cold *</li>
-			<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Water, hot</li>
-			<li><span class="measurement">6</span> <span class="measure_unit">tablespoons</span> Cocoa Powder</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla</li>
-			<li><span class="measurement">4</span> <span class="measure_unit">cups</span> Powdered Sugar</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Place water in a microwave-safe bowl and heat until it just begins to boil, approximately 1 1/2 minutes.</li>
-			<li>Add cocoa powder to the hot water. Set aside.</li>
-			<li>Place cold margarine in a large bowl. Use a hand mixer and mix for 1 – 2 minutes until it begins to soften.</li>
-			<li>Add the vanilla to the margarine. Mix well.</li>
-			<li>Add 2 cups of powdered sugar to the margarine and mix well.</li>
-			<li>Add the cocoa mixture to the bowl and mix well.</li>
-			<li>Slowly add the remaining powdered sugar until you reach the desired consistency.</li>
-			<li>Whip the frosting mixture for 1 more minute.</li>
-			<li>Then use the icing to decorate your cake or cupcakes.</li>
-		</ol>	
-		<h2>Notes</h2>
-		<ul id="notes">
-			<li>* For dairy-free frosting, use dairy-free margarine.</li>
-			<li>If your frosting is not as stiff as you would like it, then add more powdered sugar.</li>
-			<li>If your frosting is too thick add one teaspoon of cold water. Mix well. Repeat as needed. Do not add more than a teaspoon of water at a time because your frosting can quickly go from too thick to too thin.</li>
-			<li>If your frosting is too sweet, add a pinch of salt.</li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://premeditatedleftovers.com/recipes-cooking-tips/make-fluffy-dairy-free-chocolate-frosting/">https://premeditatedleftovers.com/recipes-cooking-tips/make-fluffy-dairy-free-chocolate-frosting/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

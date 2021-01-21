@@ -5,44 +5,57 @@
 		<title>Creamy Chicken Broccoli Casserole</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="creamy chicken broccoli casserole milk cream cheese garlic salt parmesan oven stove ">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Creamy Chicken Broccoli Casserole</h1>
-		<h2>Ingredients</h2>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Creamy Chicken Broccoli Casserole</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1</span> large Chicken <span class="measure_unit">Breast</span> *</li>
+					<li><span class="measurement">8</span> <span class="measure_unit">ounces</span> Broccoli *</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Milk *</li>
+					<li><span class="measurement">1</span> (8 oz) <span class="measure_unit">block</span> Cream Cheese *</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">teaspoon</span> Garlic Salt **</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Parmesan Cheese **</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">sleeve</span> crushed Ritz Crackers, optional *</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Cook the chicken, then slice or break it into bite size pieces.</li>
+					<li>Cook broccoli in salted water.</li>
+					<li>Place the broccoli in a greased casserole dish.</li>
+					<li>Heat the milk, cream cheese, garlic salt and Parmesan cheese over low heat, stirring till the mixture is smooth.</li>
+					<li>Pour <span class="measurement">1</span> <span class="measure_unit">cup</span> of sauce over the broccoli. Add the chicken into the pan and pour rest of sauce over it.</li>
+					<li>Optional: Sprinkle the top with Parmesan cheese and Ritz cracker crumbs.</li>
+					<li>Bake at 350&#8457; for 25 to 30 minutes. </li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>* Half of the Original Recipe.</li>
+					<li>** Changed from Original Recipe.</li>	
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.sixsistersstuff.com/recipe/healthy-meals-monday-creamy-chicken/">https://www.sixsistersstuff.com/recipe/healthy-meals-monday-creamy-chicken/</a></li>
+				</ul>
+			</div>
 		</div>
-		<ul id="ingredients">
-			<li><span class="measurement">1</span> large Chicken <span class="measure_unit">Breast</span> *</li>
-			<li><span class="measurement">8</span> <span class="measure_unit">ounces</span> Broccoli *</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Milk *</li>
-			<li><span class="measurement">1</span> (8 oz) <span class="measure_unit">block</span> Cream Cheese *</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">teaspoon</span> Garlic Salt **</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Parmesan Cheese **</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">sleeve</span> crushed Ritz Crackers, optional *</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Cook the chicken, then slice or break it into bite size pieces.</li>
-			<li>Cook broccoli in salted water.</li>
-			<li>Place the broccoli in a greased casserole dish.</li>
-			<li>Heat the milk, cream cheese, garlic salt and Parmesan cheese over low heat, stirring till the mixture is smooth.</li>
-			<li>Pour <span class="measurement">1</span> <span class="measure_unit">cup</span> of sauce over the broccoli. Add the chicken into the pan and pour rest of sauce over it.</li>
-			<li>Optional: Sprinkle the top with Parmesan cheese and Ritz cracker crumbs.</li>
-			<li>Bake at 350&#8457; for 25 to 30 minutes. </li>
-		</ol>
-		<h2>Notes</h2>
-		<ul id="notes">
-			<li>* Half of the Original Recipe.</li>
-			<li>** Changed from Original Recipe.</li>	
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.sixsistersstuff.com/recipe/healthy-meals-monday-creamy-chicken/">https://www.sixsistersstuff.com/recipe/healthy-meals-monday-creamy-chicken/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

@@ -5,33 +5,44 @@
 		<title>Pie Crust</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="pie crust unsalted butter sugar all purpose flour oven easy">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Pie Crust</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Pie Crust</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1 1/4</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Butter</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Sugar</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Water, icy cold</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Mix together 1 cup of flour and butter (chopped if using food processor or microwaved for 30 seconds and broken up with whisk before mixing with flour).</li>
+					<li>Once blended together, add the remaining flour and sugar.</li>
+					<li>Mix in the icy cold water until well blended together.</li>
+					<li>Roll out the needed size, and it is ready to use.</li>
+				</ol>	
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71">https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1 1/4</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Butter</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Sugar</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Water, icy cold</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Mix together 1 cup of flour and butter (chopped if using food processor or microwaved for 30 seconds and broken up with whisk before mixing with flour).</li>
-			<li>Once blended together, add the remaining flour and sugar.</li>
-			<li>Mix in the icy cold water until well blended together.</li>
-			<li>Roll out the needed size, and it is ready to use.</li>
-		</ol>	
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71">https://www.youtube.com/watch?v=4JKBsd3SuVw&feature=youtu.be&t=71</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

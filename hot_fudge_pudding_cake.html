@@ -5,43 +5,56 @@
 		<title>Hot Fudge Pudding Cake</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Hot Fudge Pudding Cake</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Hot Fudge Pudding Cake</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+					<li><span class="measurement"></span> <span class="measure_unit"></span></li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>	
+			</div>
+			<div id="notes">
+				<h2>Note</h2>
+				<ul id="notes_list">
+					<li></li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href=""></a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-			<li><span class="measurement"></span> <span class="measure_unit"></span></li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ol>	
-		<h2>Note</h2>
-		<ul id="notes">
-			<li></li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href=""></a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

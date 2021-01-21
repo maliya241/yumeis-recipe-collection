@@ -5,38 +5,49 @@
 		<title>Chocolate Fudge Pie</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="old fashioned chocolate fudge pie unsalted butter sugar all purpose flour salt unsweetened cocoa powder vanilla extract eggs pie crust oven bake">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Chocolate Fudge Pie</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Chocolate Fudge Pie</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">3/4</span> <span class="measure_unit">cup</span> Unsalted Butter, melted</li>
+					<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Granulated Sugar</li>
+					<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Salt</li>
+					<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Unsweetened Cocoa Powder</li>
+					<li><span class="measurement">1 1/2</span> <span class="measure_unit">teaspoons</span> Vanilla Extract</li>
+					<li><span class="measurement">3</span> large <span class="measure_unit">Eggs</span></li>
+					<li><span class="measurement">1</span> 9-inch Pie <span class="measure_unit">Shell</span>, unbaked</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Preheat oven to 350&#8457;.</li>
+					<li>Melt butter in a large microwave safe bowl. Add sugar to melted butter and use a hand mixer or whisk to combine until sugar is mostly dissolved.</li>
+					<li>Add remaining ingredients and beat or whisk until well blended.</li>
+					<li>Pour into pie crust and bake 35-40 minutes, or until center is set and toothpick has gooey wet crumbs. Make sure you don't overbake.</li>
+				</ol>
+			</div>
+			<div id="sources">
+				<h2>Sources</h2>
+				<ul id="source_list">
+					<li>Homemade Pie Crust: <a href="pie_crust.html">pie_crust.html</a></li>
+					<li>Original Recipe: <a href="https://southernfoodandfun.com/wp-json/mv-create/v1/creations/312/print">https://southernfoodandfun.com/wp-json/mv-create/v1/creations/312/print</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">3/4</span> <span class="measure_unit">cup</span> Unsalted Butter, melted</li>
-			<li><span class="measurement">1 1/2</span> <span class="measure_unit">cups</span> Granulated Sugar</li>
-			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Salt</li>
-			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Unsweetened Cocoa Powder</li>
-			<li><span class="measurement">1 1/2</span> <span class="measure_unit">teaspoons</span> Vanilla Extract</li>
-			<li><span class="measurement">3</span> large <span class="measure_unit">Eggs</span></li>
-			<li><span class="measurement">1</span> 9-inch Pie <span class="measure_unit">Shell</span>, unbaked</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 350&#8457;.</li>
-			<li>Melt butter in a large microwave safe bowl. Add sugar to melted butter and use a hand mixer or whisk to combine until sugar is mostly dissolved.</li>
-			<li>Add remaining ingredients and beat or whisk until well blended.</li>
-			<li>Pour into pie crust and bake 35-40 minutes, or until center is set and toothpick has gooey wet crumbs. Make sure you don't overbake.</li>
-		</ol>	
-		<h2>Sources</h2>
-		<p>Homemade Pie Crust: <a href="pie_crust.html">pie_crust.html</a></p>
-		<p>Original Recipe: <a href="https://southernfoodandfun.com/wp-json/mv-create/v1/creations/312/print">https://southernfoodandfun.com/wp-json/mv-create/v1/creations/312/print</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

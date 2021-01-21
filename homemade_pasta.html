@@ -5,42 +5,53 @@
 		<title>Homemade Pasta Dough</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">	
+		<link rel="stylesheet" type="text/css" href="responsive.css">	
 		<meta name="keywords" content="noodles dough pasta dough flour eggs oil">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Homemade Pasta Dough</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Homemade Pasta Dough</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">2</span> <span class="measure_unit">cups</span> Flour</li>
+					<li><span class="measurement">3</span> <span class="measure_unit">Eggs</span>, room temperature</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Oil</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Begin your pasta by taking flour and pouring it on your surface. Make a well in the flour.</li>
+					<li>Add your eggs to the well.</li>
+					<li>Add olive oil and salt to the well.</li>
+					<li>Use chopsticks to combine the ingredients. Start by breaking the egg yokes and then slowly stir to incorporate flour. </li>
+					<li>Knead until stretchy, smooth, and firm.</li>
+					<li>Cover in plastic and let rest for about 30 minutes.</li>
+					<li>Remove pasta and roll out on a floured surface.</li>
+					<li>Shape pasta. More on pasta shapes linked below.</li>
+					<li>Boil water in a pot. Add enough salt to make it salty like the ocean.</li>
+					<li>Cook pasta.</li>
+					<li>Make pasta sauce.</li>
+				</ol>
+			</div>
+			<div id="sources">
+				<h2>Sources</h2>
+				<ul id="source_list">
+					<li>Making Pasta Dough: <a href="https://youtu.be/YkQ3T3Tqjrc?t=348">https://youtu.be/YkQ3T3Tqjrc?t=348</a></li>
+					<li>Shaping Pasta: <a href="https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp">https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp</a></li>
+					<li>Storing Pasta Dough: <a href="https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough">https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">2</span> <span class="measure_unit">cups</span> Flour</li>
-			<li><span class="measurement">3</span> <span class="measure_unit">Eggs</span>, room temperature</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Oil</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Salt</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Begin your pasta by taking flour and pouring it on your surface. Make a well in the flour.</li>
-			<li>Add your eggs to the well.</li>
-			<li>Add olive oil and salt to the well.</li>
-			<li>Use chopsticks to combine the ingredients. Start by breaking the egg yokes and then slowly stir to incorporate flour. </li>
-			<li>Knead until stretchy, smooth, and firm.</li>
-			<li>Cover in plastic and let rest for about 30 minutes.</li>
-			<li>Remove pasta and roll out on a floured surface.</li>
-			<li>Shape pasta. More on pasta shapes linked below.</li>
-			<li>Boil water in a pot. Add enough salt to make it salty like the ocean.</li>
-			<li>Cook pasta.</li>
-			<li>Make pasta sauce.</li>
-		</ol>
-		<h2>Sources</h2>
-		<p>Making Pasta Dough: <a href="https://youtu.be/YkQ3T3Tqjrc?t=348">https://youtu.be/YkQ3T3Tqjrc?t=348</a></p>
-		<p>Shaping Pasta: <a href="https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp">https://www.recipetips.com/kitchen-tips/t--793/cutting-and-shaping-pasta-by-hand.asp</a></p>
-		<p>Storing Pasta Dough: <a href="https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough">https://thehappyfoodie.co.uk/articles/how-to-work-with-fresh-pasta-dough</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

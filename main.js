@@ -1,4 +1,4 @@
-var multiplier = Number(document.getElementById("serving_size_multiplier").value);
+var multiplier = Number(document.getElementById("serving_size_multiplier").innerHTML);
 var number_of_ingredients = document.getElementsByClassName("measurement").length;
 var fraction_ingredient_measurements = [];
 var decimal_ingredient_measurements = [];
@@ -43,7 +43,7 @@ function increment_multipler() {
 
 function after_multiplier_change() {
 	//display the changed multiplier
-	document.getElementById("serving_size_multiplier").value = multiplier;
+	document.getElementById("serving_size_multiplier").innerHTML = multiplier;
 	
 	var multiplied_decimal_ingredients = [];
 	var multiplied_fraction_ingredients = [];

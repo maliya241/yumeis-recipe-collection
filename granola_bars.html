@@ -5,46 +5,59 @@
 		<title>Granola Bars</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="granola bars crisp rice cereal rice krispies old fashioned oats ground flax seeds brown sugar honey coconut oil chocolate peanut butter chocolate hazelnut butter nut butter cocoa powder vanilla extract mini chocolate chips no bake stove">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Granola Bars</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Granola Bars</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">2</span> <span class="measure_unit">cups</span> Crisp Rice Cereal *</li>
+					<li><span class="measurement">1 1/3</span> <span class="measure_unit">cups</span> Old Fashioned Oats *</li>
+					<li><span class="measurement">1/3</span> <span class="measure_unit">cups</span> Ground Flax Seeds *</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Brown Sugar *</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Honey *</li>
+					<li><span class="measurement">1/6</span> <span class="measure_unit">cup</span> Coconut Oil *</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Chocolate Peanut Butter * **</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla Extract *</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> mini chocolate chips *</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>In a large bowl, combine the oats, crispy rice cereal and ground flaxseed until well mixed.</li>
+					<li>In a small saucepan, add the brown sugar, honey and coconut oil. Over medium heat, bring the mixture to a boil, stirring frequently. Boil for one minute and then remove from heat.</li>
+					<li>Add the nut butter and vanilla extract and stir until smooth.</li>
+					<li>Pour the nut butter mixture over the oat mixture and stir until well combined. Let the mixture cool for about 6 or 7 minutes. While the mixture is cooling, line a pan with parchment paper.</li>
+					<li>Once the mixture has cooled, pour the mixture onto the parchment paper lined pan and spread around with a mixing spoon until it's evenly spread on the pan. Once the mixture is evenly distributed on the pan, you need to press it to compact it. The easiest way to do this is to use an identical pan and press the granola bars down.</li>
+					<li>Sprinkle the mini chocolate chips evenly across the top of the granola bars and then use your extra pan to press them down into the granola bars. Only do this once and do it immediately after sprinkling the chocolate chips. I've learned the hard way that if you wait too long or you try to press them multiple times, the chocolate chips will stick to the bottom of your extra pan and get all melty. So do it quickly and do it once and it works perfectly!</li>
+					<li>You can slice and serve immediately, but if you let them sit for a few hours, they will set up a little bit more and be easier to slice up. If you are going to wrap them up individually, place the pan in the refrigerator or freezer for a bit so that the chocolate chips on top will harden up before wrapping them in plastic wrap. Can be stored at room temperature for up to a week (if they last that long)!</li>
+				</ol>	
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>* Changed from Original Recipe.</li>
+					<li>** 3 teaspoons Cocoa Powder and 1 cup Peanut Butter as a substitute for every cup of Cocolate Peanut Butter or other nut butter of choice.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://butterwithasideofbread.com/wprm_print/42554">https://butterwithasideofbread.com/wprm_print/42554</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">2</span> <span class="measure_unit">cups</span> Crisp Rice Cereal *</li>
-			<li><span class="measurement">1 1/3</span> <span class="measure_unit">cups</span> Old Fashioned Oats *</li>
-			<li><span class="measurement">1/3</span> <span class="measure_unit">cups</span> Ground Flax Seeds *</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Brown Sugar *</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Honey *</li>
-			<li><span class="measurement">1/6</span> <span class="measure_unit">cup</span> Coconut Oil *</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Chocolate Peanut Butter * **</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">teaspoon</span> Vanilla Extract *</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> mini chocolate chips *</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>In a large bowl, combine the oats, crispy rice cereal and ground flaxseed until well mixed.</li>
-			<li>In a small saucepan, add the brown sugar, honey and coconut oil. Over medium heat, bring the mixture to a boil, stirring frequently. Boil for one minute and then remove from heat.</li>
-			<li>Add the nut butter and vanilla extract and stir until smooth.</li>
-			<li>Pour the nut butter mixture over the oat mixture and stir until well combined. Let the mixture cool for about 6 or 7 minutes. While the mixture is cooling, line a pan with parchment paper.</li>
-			<li>Once the mixture has cooled, pour the mixture onto the parchment paper lined pan and spread around with a mixing spoon until it's evenly spread on the pan. Once the mixture is evenly distributed on the pan, you need to press it to compact it. The easiest way to do this is to use an identical pan and press the granola bars down.</li>
-			<li>Sprinkle the mini chocolate chips evenly across the top of the granola bars and then use your extra pan to press them down into the granola bars. Only do this once and do it immediately after sprinkling the chocolate chips. I've learned the hard way that if you wait too long or you try to press them multiple times, the chocolate chips will stick to the bottom of your extra pan and get all melty. So do it quickly and do it once and it works perfectly!</li>
-			<li>You can slice and serve immediately, but if you let them sit for a few hours, they will set up a little bit more and be easier to slice up. If you are going to wrap them up individually, place the pan in the refrigerator or freezer for a bit so that the chocolate chips on top will harden up before wrapping them in plastic wrap. Can be stored at room temperature for up to a week (if they last that long)!</li>
-		</ol>	
-		<h2>Notes</h2>
-		<ul id="notes">
-			<li>* Changed from Original Recipe.</li>
-			<li>** 3 teaspoons Cocoa Powder and 1 cup Peanut Butter as a substitute for every cup of Cocolate Peanut Butter or other nut butter of choice.</li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://butterwithasideofbread.com/wprm_print/42554">https://butterwithasideofbread.com/wprm_print/42554</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

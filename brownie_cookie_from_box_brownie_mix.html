@@ -5,37 +5,48 @@
 		<title>Brownie Cookies from Box Brownie Mix</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="brownie cookie from box brownie mix all purpose flour chocolate vegetable oil egg water oven bake">
 	<head>
 	</body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Brownie Cookies from Box Brownie Mix</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier</span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Brownie Cookies from Box Brownie Mix</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1</span> (18 oz) <span class="measure_unit">box</span> Brownie Mix</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
+					<li><span class="measurement">2</span> large <span class="measure_unit">Eggs</span></li>
+					<li><span class="measurement">5</span> <span class="measure_unit">tablespoons</span> Vegetable Oil</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Water</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Chocolate Chips</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Preheat oven to 350&#8457; and line a large baking sheet with parchment paper.</li>
+					<li>In a large bowl, combine all of the ingredients and mix well, scraping down the sides as needed. The dough will be very sticky.</li>
+					<li>Scoop out the dough and drop onto the prepared baking sheet about 2 inches apart.</li>
+					<li>Bake for 7-8 minutes.</li>
+					<li>Remove from oven and allow to cool on pan for a couple of minutes before transferring to a cooling rack.</li>
+					<li>Consume or store in an air-tight container for up to one week.</li>
+				</ol>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.sugarandsoul.co/brownie-cookies/">https://www.sugarandsoul.co/brownie-cookies/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1</span> (18 oz) <span class="measure_unit">box</span> Brownie Mix</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> All Purpose Flour</li>
-			<li><span class="measurement">2</span> large <span class="measure_unit">Eggs</span></li>
-			<li><span class="measurement">5</span> <span class="measure_unit">tablespoons</span> Vegetable Oil</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Water</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Chocolate Chips</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 350&#8457; and line a large baking sheet with parchment paper.</li>
-			<li>In a large bowl, combine all of the ingredients and mix well, scraping down the sides as needed. The dough will be very sticky.</li>
-			<li>Scoop out the dough and drop onto the prepared baking sheet about 2 inches apart.</li>
-			<li>Bake for 7-8 minutes.</li>
-			<li>Remove from oven and allow to cool on pan for a couple of minutes before transferring to a cooling rack.</li>
-			<li>Consume or store in an air-tight container for up to one week.</li>
-		</ol>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.sugarandsoul.co/brownie-cookies/">https://www.sugarandsoul.co/brownie-cookies/</a></p>
 		<script src="main.js"></script>
 	</body>		
 </html>

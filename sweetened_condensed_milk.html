@@ -5,38 +5,51 @@
 		<title>Sweetened Condensed Milk</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="sweetened condensed milk substitute evaporated milk sugar butter three ingredients stove top stovetop">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Sweetened Condensed Milk</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Sweetened Condensed Milk</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1</span> (12 oz) <span class="measure_unit">can</span> Evaporated Milk</li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Sugar *</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Butter</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Place the milk and sugar in a pan.</li>
+					<li>Turn on medium-high heat.</li>
+					<li>Bring to a boil, stirring frequently. </li>
+					<li>Turn heat down a bit and keep at a slow rolling boil for about 10 minutes. Continue stirring frequently.</li>
+					<li>Take off heat and add butter. Stir butter to melt and let cool.</li>
+					<li>If you don’t need it right away, you can store it in the refrigerator. </li>
+				</ol>
+			</div>
+			<div id="notes">
+			<h2>Note</h2>
+				<ul id="notes_list">
+					<li>For added sweetness, can add up to a cup of sugar in total.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/">http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1</span> (12 oz) <span class="measure_unit">can</span> Evaporated Milk</li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Sugar *</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">tablespoon</span> Butter</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Place the milk and sugar in a pan.</li>
-			<li>Turn on medium-high heat.</li>
-			<li>Bring to a boil, stirring frequently. </li>
-			<li>Turn heat down a bit and keep at a slow rolling boil for about 10 minutes. Continue stirring frequently.</li>
-			<li>Take off heat and add butter. Stir butter to melt and let cool.</li>
-			<li>If you don’t need it right away, you can store it in the refrigerator. </li>
-		</ol>
-		<h2>Note</h2>
-		<ul id="notes">
-			<li>For added sweetness, can add up to a cup of sugar in total.</li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/">http://www.frugalmindedmom.com/frugal-cooking-tip-make-your-own-sweetened-condensed-milk/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

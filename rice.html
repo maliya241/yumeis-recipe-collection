@@ -5,34 +5,43 @@
 		<title>Rice</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="rice water salt stove">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Rice</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Rice</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Rice</li>
+					<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Water</li>
+				</ul>
+			</div>
+			<div id="directions"
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>In a sauce pan, bring water to a boil.</li>
+					<li>Stir in rice.</li>
+					<li>Cover. Reduce heat and simmer for 20 minutes or until all water is absorbed.</li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>For every cup of rice, add double the amount of water. </li>
+					<li>For drier rice, use 1/4 cup less water.</li>
+					<li>For moister rice, use 1/4 cup more water.</li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1/2</span> <span class="measure_unit">cup</span> Rice</li>
-			<li><span class="measurement">1</span> <span class="measure_unit">cup</span> Water</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>In a sauce pan, bring water to a boil.</li>
-			<li>Stir in rice.</li>
-			<li>Cover. Reduce heat and simmer for 20 minutes or until all water is absorbed.</li>
-		</ol>	
-		<h2>Notes</h2>
-		<ul id="notes">
-			<li>For every cup of rice, add double the amount of water. </li>
-			<li>For drier rice, use 1/4 cup less water.</li>
-			<li>For moister rice, use 1/4 cup more water.</li>
-		</ul>
 		<script src="main.js"></script>
 	</body>				
 </html>

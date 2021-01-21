@@ -5,38 +5,49 @@
 		<title>Cake Mix Brownies</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="cake mix brownies vegetable oil milk egg chocolate chips oven bake">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Cake Mix Brownies</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier</span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Cake Mix Brownies</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1</span> <span class="measure_unit">box</span> Cake Mix</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Vegetable Oil</li>
+					<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Milk</li>
+					<li><span class="measurement">1</span> large <span class="measure_unit">Egg</span></li>
+					<li><span class="measurement">1/2</span> <span class="measure_unit">bag</span> Chocolate Chips</li>
+					<li>Spray On Cooking Oil (like Pam)</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Preheat oven to 350&#8457;.</li>
+					<li>Oil a 9x9 pan.</li>
+					<li>Mix all ingredients with a strong spoon. It will be thick and very uncake-like.</li>
+					<li>Smooth out batter into pan. It doesn't have to be perfectly flat.</li>
+					<li>Bake for 15 minutes.</li>
+					<li>Remove from heat and let cool.</li>
+					<li>Cut into squares and serve with milk.</li>
+				</ol>	
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/">https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1</span> <span class="measure_unit">box</span> Cake Mix</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Vegetable Oil</li>
-			<li><span class="measurement">1/3</span> <span class="measure_unit">cup</span> Milk</li>
-			<li><span class="measurement">1</span> large <span class="measure_unit">Egg</span></li>
-			<li><span class="measurement">1/2</span> <span class="measure_unit">bag</span> Chocolate Chips</li>
-			<li>Spray On Cooking Oil (like Pam)</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Preheat oven to 350&#8457;.</li>
-			<li>Oil a 9x9 pan.</li>
-			<li>Mix all ingredients with a strong spoon. It will be thick and very uncake-like.</li>
-			<li>Smooth out batter into pan. It doesn't have to be perfectly flat.</li>
-			<li>Bake for 15 minutes.</li>
-			<li>Remove from heat and let cool.</li>
-			<li>Cut into squares and serve with milk.</li>
-		</ol>	
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/">https://www.becauseimcheap.com/fudgy-cake-mix-brownies-recipe/</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>

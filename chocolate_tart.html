@@ -5,27 +5,34 @@
 		<title>Chocolate Tart</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="chocolate tart chocolate chips heavy cream two ingredients microwave">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Chocolate Tart</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Chocolate Tart</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">400</span> <span class="measure_unit">grams</span> (about <span class="measurement">2 1/2</span> <span class="measure_unit">cups</span>) Cooking Chocolate Chips</li>
+					<li><span class="measurement">150</span> <span class="measure_unit">milliliters</span> Heavy Cream</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>Put chocolate chips and heavy cream in a bowl and melt at 30 second intervals until completely melted (about 3 rounds).</li>
+					<li>Pour the melted mix into something and refrigerate until solid.</li>
+				</ol>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">400</span> <span class="measure_unit">grams</span> (about <span class="measurement">2 1/2</span> <span class="measure_unit">cups</span>) Cooking Chocolate Chips</li>
-			<li><span class="measurement">150</span> <span class="measure_unit">milliliters</span> Heavy Cream</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>Put chocolate chips and heavy cream in a bowl and melt at 30 second intervals until completely melted (about 3 rounds).</li>
-			<li>Pour the melted mix into something and refrigerate until solid.</li>
-		</ol>
 		<script src="main.js"></script>
 	</body>				
 </html>

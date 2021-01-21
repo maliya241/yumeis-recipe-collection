@@ -5,42 +5,55 @@
 		<title>Cream Cheese Pasta</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css">
 		<meta name="keywords" content="cream cheese pasta parmesan garlic powder onion powder black pepper salt milk stove easy">
 	</head>
 	<body>
-		<p id="home"><a href="index.html">home</a></p>
-		<h1>Cream Cheese Pasta</h1>
-		<div id="serving_size_multiplier_container"> 
-			<span>Recipe Multiplier </span>
-			<span><button id="multiplier_decrement" onclick="decrement_multipler()">-</button></span>
-			<input id="serving_size_multiplier" type="number" value="1" min="1" disabled>
-			<span><button id="multiplier_increment" onclick="increment_multipler()">+</button></span>
+		<div id="wrapper">
+			<p id="home"><a href="index.html">home</a></p>
+			<h1>Cream Cheese Pasta</h1>
+			<div id="serving_size_multiplier_container"> 
+				<p id="recipe_multiplier_text">Recipe Multiplier </p>
+				<button id="multiplier_decrement" onclick="decrement_multipler()">-</button>
+				<p id="serving_size_multiplier">1</p>
+				<button id="multiplier_increment" onclick="increment_multipler()">+</button>
+			</div>
+			<div id="ingredients">
+				<h2>Ingredients</h2>
+				<ul id="ingredients_list">
+					<li><span class="measurement">1/4</span> <span class="measure_unit">pound</span> Pasta *</li>
+					<li><span class="measurement">2</span> <span class="measure_unit">ounces</span> Cream Cheese *</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Grated Parmesan *</li>
+					<li><span class="measurement">1/16</span> <span class="measure_unit">teaspoon</span> Garlic Powder *</li>
+					<li><span class="measurement">1/16</span> <span class="measure_unit">teaspoon</span> Onion Powder *</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Black Pepper *</li>
+					<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Milk **</li>
+					<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Cooking Water *</li>
+				</ul>
+			</div>
+			<div id="directions">
+				<h2>Directions</h2>
+				<ol id="directions_list">
+					<li>In a large pot of boiling salted water, cook pasta according to package directions until al dente.</li>
+					<li>Right before draining, reserve a cup of starchy pasta water. Drain the pasta and set aside.</li>
+					<li>Add the cream cheese, starchy pasta water, garlic powder, onion powder, black pepper, and milk in pot. Stir to combine and create a nice and creamy emulsion. Add parmesan cheese and stir well. Your pasta sauce is ready.</li>
+					<li>Add the pasta back into the pot, and stir well to evenly coat the pasta in the sauce, add more cooking water as needed for a smooth and creamy consistency.</li>
+				</ol>
+			</div>
+			<div id="notes">
+				<h2>Notes</h2>
+				<ul id="notes_list">
+					<li>* Changed from Original Recipe.</li>
+					<li>** Added ingredient.</li>
+				</ul>
+			</div>
+			<div id="sources">
+				<h2>Source</h2>
+				<ul id="source_list">
+					<li>Original Recipe: <a href="https://theclevermeal.com/10-minute-cream-cheese-pasta/#wprm-recipe-container-5820">https://theclevermeal.com/10-minute-cream-cheese-pasta/#wprm-recipe-container-5820</a></li>
+				</ul>
+			</div>
 		</div>
-		<h2>Ingredients</h2>
-		<ul id="ingredients">
-			<li><span class="measurement">1/4</span> <span class="measure_unit">pound</span> Pasta *</li>
-			<li><span class="measurement">2</span> <span class="measure_unit">ounces</span> Cream Cheese *</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Grated Parmesan *</li>
-			<li><span class="measurement">1/16</span> <span class="measure_unit">teaspoon</span> Garlic Powder *</li>
-			<li><span class="measurement">1/16</span> <span class="measure_unit">teaspoon</span> Onion Powder *</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">teaspoon</span> Black Pepper *</li>
-			<li><span class="measurement">1/8</span> <span class="measure_unit">cup</span> Milk **</li>
-			<li><span class="measurement">1/4</span> <span class="measure_unit">cup</span> Cooking Water *</li>
-		</ul>
-		<h2>Directions</h2>
-		<ol id="directions">
-			<li>In a large pot of boiling salted water, cook pasta according to package directions until al dente.</li>
-			<li>Right before draining, reserve a cup of starchy pasta water. Drain the pasta and set aside.</li>
-			<li>Add the cream cheese, starchy pasta water, garlic powder, onion powder, black pepper, and milk in pot. Stir to combine and create a nice and creamy emulsion. Add parmesan cheese and stir well. Your pasta sauce is ready.</li>
-			<li>Add the pasta back into the pot, and stir well to evenly coat the pasta in the sauce, add more cooking water as needed for a smooth and creamy consistency.</li>
-		</ol>	
-		<h2>Notes</h2>
-		<ul id="notes">
-			<li>* Changed from Original Recipe.</li>
-			<li>** Added ingredient.</li>
-		</ul>
-		<h2>Source</h2>
-		<p>Original Recipe: <a href="https://theclevermeal.com/10-minute-cream-cheese-pasta/#wprm-recipe-container-5820">https://theclevermeal.com/10-minute-cream-cheese-pasta/#wprm-recipe-container-5820</a></p>
 		<script src="main.js"></script>
 	</body>				
 </html>
