@@ -18,3 +18,6 @@ This project is created with:
 
 ## Access
 https://maliya241.github.io/yumeis-recipe-collection/
+
+## Future Work
+* Convert decimal to fraction (currently manually hard coded for common fractions)
