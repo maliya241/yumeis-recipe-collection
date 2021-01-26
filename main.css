@@ -91,6 +91,7 @@ p {
 }
 
 #recipes_list li a {
+	font-size: 1.25em;
 	padding: 0.5em;
 	margin: 0.25em;
 	border-radius: 15px;
@@ -163,4 +164,9 @@ a:hover, a:focus {
 #multiplier_increment:focus, #multiplier_decrement:focus, #multiplier_increment:hover, #multiplier_decrement:hover {
 	background: rgba(155, 198, 186, 0.75);
 	color: #6f4d32;
+}
+
+
+#search_label {
+	display: none;
 }
